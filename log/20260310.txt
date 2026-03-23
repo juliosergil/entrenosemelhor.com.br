@@ -1,0 +1,22 @@
+10/03/2026 09:49:15 -  -  Plano 8 inserido com sucesso na tabela partner_planos para anunciante 12
+10/03/2026 09:49:15 - atualiza_partner_plano_id() - idanuncio:   - partner_plano_id: 4
+10/03/2026 09:49:15 - Nao precisa atualizar o partner_plano_id da oferta uma vez que o usuario esta adquirindo o plano na area publica
+10/03/2026 10:01:08 -  -  Plano 8 inserido com sucesso na tabela partner_planos para anunciante 12
+10/03/2026 10:01:08 - atualiza_partner_plano_id() - idanuncio:   - partner_plano_id: 5
+10/03/2026 10:01:08 - Nao precisa atualizar o partner_plano_id da oferta uma vez que o usuario esta adquirindo o plano na area publica
+10/03/2026 10:01:59 -  -  Plano 8 inserido com sucesso na tabela partner_planos para anunciante 12
+10/03/2026 10:01:59 - atualiza_partner_plano_id() - idanuncio:   - partner_plano_id: 6
+10/03/2026 10:01:59 - Nao precisa atualizar o partner_plano_id da oferta uma vez que o usuario esta adquirindo o plano na area publica
+10/03/2026 10:02:17 -  -  Plano 8 inserido com sucesso na tabela partner_planos para anunciante 12
+10/03/2026 10:02:17 - atualiza_partner_plano_id() - idanuncio:  113 - partner_plano_id: 7
+10/03/2026 10:02:17 - update team set partner_plano_id = 7 where id=113
+10/03/2026 10:02:18 - grava_id_plano: update team set id_plano='8' where id=113
+10/03/2026 10:02:25 -  -  Plano 8 inserido com sucesso na tabela partner_planos para anunciante 12
+10/03/2026 10:02:25 - atualiza_partner_plano_id() - idanuncio:  114 - partner_plano_id: 8
+10/03/2026 10:02:25 - update team set partner_plano_id = 8 where id=114
+10/03/2026 10:02:26 - grava_id_plano: update team set id_plano='8' where id=114
+10/03/2026 10:06:27 -  -  Plano 8 inserido com sucesso na tabela partner_planos para anunciante 12
+10/03/2026 10:06:27 - atualiza_partner_plano_id() - idanuncio:  115 - partner_plano_id: 9
+10/03/2026 10:06:27 - update team set partner_plano_id = 9 where id=115
+10/03/2026 10:06:28 - grava_id_plano: update team set id_plano='8' where id=115
+10/03/2026 10:07:49 - grava_id_plano: update team set id_plano='8' where id=115

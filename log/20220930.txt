@@ -1,0 +1,5 @@
+30/09/2022 09:42:50 - 65 - Os dias para o plano id 10 são 3 dia(s) 
+30/09/2022 09:42:50 - 65 - Periodo de veiculacao do anuncio atualizados com sucesso
+30/09/2022 09:42:50 - plano_id: 10 - atualiza_max_anuncios_partner
+30/09/2022 09:42:50 - plano_id: 10 - incrementa max_anuncios
+30/09/2022 09:42:50 - 65 - Erro ao atualizar o max_anuncio do usuario: update partner set max_anuncios = max_anuncios + 1 where id=. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1

@@ -1,0 +1,7 @@
+19/02/2026 14:13:58 - grava_id_plano: update team set id_plano='1' where id=49
+19/02/2026 14:14:07 - grava_id_plano: update team set id_plano='1' where id=49
+19/02/2026 14:16:16 - grava_id_plano: update team set id_plano='1' where id=49
+19/02/2026 14:19:16 -  DIAS: 3
+19/02/2026 14:19:16 -  end_time: 1771780756
+19/02/2026 14:19:20 -  DIAS: 3
+19/02/2026 14:19:20 -  end_time: 1771780760

@@ -1,0 +1,31 @@
+22/02/2026 11:33:01 - 74 - Os dias para o plano id 10 são 3 dia(s) 
+22/02/2026 11:33:01 - 74 - Periodo de veiculacao do anuncio atualizados com sucesso
+22/02/2026 11:33:01 - plano_id: 10 - atualiza_max_anuncios_partner
+22/02/2026 11:36:40 - 75 - Os dias para o plano id 10 são 3 dia(s) 
+22/02/2026 11:36:40 - 75 - Periodo de veiculacao do anuncio atualizados com sucesso
+22/02/2026 11:36:40 - plano_id: 10 - atualiza_max_anuncios_partner
+22/02/2026 11:36:40 - plano_id: 10 - incrementa max_anuncios
+22/02/2026 11:43:30 - 76 - Os dias para o plano id 10 são 3 dia(s) 
+22/02/2026 11:43:30 - 76 - Periodo de veiculacao do anuncio atualizados com sucesso
+22/02/2026 11:43:30 - plano_id: 10 - atualiza_max_anuncios_partner para team_id: 76
+22/02/2026 11:43:30 - Erro: partner_id inválido para team_id 76.
+22/02/2026 11:47:04 - 77 - Os dias para o plano id 10 são 3 dia(s) 
+22/02/2026 11:47:04 - 77 - Periodo de veiculacao do anuncio atualizados com sucesso
+22/02/2026 11:47:04 - plano_id: 10 - atualiza_max_anuncios_partner para team_id: 77
+22/02/2026 11:47:04 - Erro: partner_id inválido para team_id 77.
+22/02/2026 11:55:47 - 78 - Os dias para o plano id 10 são 3 dia(s) 
+22/02/2026 11:55:47 - 78 - Periodo de veiculacao do anuncio atualizados com sucesso
+22/02/2026 11:55:47 - plano_id: 10 - atualiza_max_anuncios_partner para team_id: 78
+22/02/2026 11:55:47 - Erro: partner_id inválido para team_id 78.
+22/02/2026 17:40:39 - 90 - Os dias para o plano id 10 são 3 dia(s) 
+22/02/2026 17:40:39 - 90 - Periodo de veiculacao do anuncio atualizados com sucesso
+22/02/2026 17:40:39 - plano_id: 10 - atualiza_max_anuncios_partner para team_id: 90
+22/02/2026 17:40:39 - Erro: partner_id inválido para team_id 90.
+22/02/2026 17:54:34 - 93 - Os dias para o plano id 10 são 3 dia(s) 
+22/02/2026 17:54:34 - 93 - Periodo de veiculacao do anuncio atualizados com sucesso
+22/02/2026 17:54:34 - plano_id: 10 - atualiza_max_anuncios_partner para team_id: 93
+22/02/2026 17:54:34 - Erro: partner_id inválido para team_id 93.
+22/02/2026 18:00:50 - 92 - Os dias para o plano id 10 são 3 dia(s) 
+22/02/2026 18:00:50 - 92 - Periodo de veiculacao do anuncio atualizados com sucesso
+22/02/2026 18:00:50 - plano_id: 10 - atualiza_max_anuncios_partner para team_id: 92
+22/02/2026 18:00:50 - Erro: partner_id inválido para team_id 92.

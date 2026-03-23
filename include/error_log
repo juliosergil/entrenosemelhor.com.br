@@ -1,0 +1,538 @@
+[19-Dec-2025 10:27:26 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:998
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('32')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 998
+[19-Dec-2025 11:04:49 America/Fortaleza] PHP Warning:  Undefined array key "idcidade" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 7
+[19-Dec-2025 11:04:49 America/Fortaleza] PHP Warning:  Undefined array key "id" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 8
+[19-Dec-2025 11:04:49 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 11
+[19-Dec-2025 11:04:49 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 25
+[19-Dec-2025 11:04:49 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 40
+[19-Dec-2025 11:04:49 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 72
+[19-Dec-2025 11:04:49 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 95
+[19-Dec-2025 11:04:49 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 108
+[19-Dec-2025 11:04:49 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 125
+[20-Dec-2025 23:24:37 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:998
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('35')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 998
+[03-Jan-2026 15:02:05 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:998
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('35')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 998
+[03-Jan-2026 15:22:23 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:998
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('34')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 998
+[03-Jan-2026 16:03:46 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:998
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('38')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 998
+[03-Jan-2026 17:38:07 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:998
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('39')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 998
+[05-Jan-2026 21:36:49 America/Fortaleza] PHP Warning:  Undefined array key "idcidade" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 7
+[05-Jan-2026 21:36:49 America/Fortaleza] PHP Warning:  Undefined array key "id" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 8
+[05-Jan-2026 21:36:49 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 11
+[05-Jan-2026 21:36:49 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 25
+[05-Jan-2026 21:36:49 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 40
+[05-Jan-2026 21:36:49 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 72
+[05-Jan-2026 21:36:49 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 95
+[05-Jan-2026 21:36:49 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 108
+[05-Jan-2026 21:36:49 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 125
+[09-Jan-2026 17:54:45 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:998
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('32')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 998
+[09-Jan-2026 20:47:23 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:998
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('31')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 998
+[09-Jan-2026 23:45:31 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:998
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('28')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 998
+[10-Jan-2026 07:39:12 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:998
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('29')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 998
+[10-Jan-2026 14:09:17 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:998
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('29')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 998
+[11-Jan-2026 00:38:15 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:998
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('38')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 998
+[11-Jan-2026 10:31:27 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:998
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('40')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 998
+[12-Jan-2026 07:51:22 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:998
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('34')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 998
+[21-Jan-2026 12:24:35 America/Fortaleza] PHP Warning:  Undefined array key "idcidade" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 7
+[21-Jan-2026 12:24:35 America/Fortaleza] PHP Warning:  Undefined array key "id" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 8
+[21-Jan-2026 12:24:35 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 11
+[21-Jan-2026 12:24:35 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 25
+[21-Jan-2026 12:24:35 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 40
+[21-Jan-2026 12:24:35 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 72
+[21-Jan-2026 12:24:35 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 95
+[21-Jan-2026 12:24:35 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 108
+[21-Jan-2026 12:24:35 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 125
+[21-Jan-2026 12:24:35 America/Fortaleza] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /home2/juli6348/entrenosemelhor.com.br/include/upload.php:171
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/upload.php(171): getimagesize('')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 171
+[21-Jan-2026 12:24:47 America/Fortaleza] PHP Warning:  Undefined array key "idcidade" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 7
+[21-Jan-2026 12:24:47 America/Fortaleza] PHP Warning:  Undefined array key "id" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 8
+[21-Jan-2026 12:24:47 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 11
+[21-Jan-2026 12:24:47 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 25
+[21-Jan-2026 12:24:47 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 40
+[21-Jan-2026 12:24:47 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 72
+[21-Jan-2026 12:24:47 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 95
+[21-Jan-2026 12:24:47 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 108
+[21-Jan-2026 12:24:47 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 125
+[21-Jan-2026 12:37:04 America/Fortaleza] PHP Warning:  Undefined array key "idcidade" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 7
+[21-Jan-2026 12:37:04 America/Fortaleza] PHP Warning:  Undefined array key "id" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 8
+[21-Jan-2026 12:37:04 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 11
+[21-Jan-2026 12:37:04 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 25
+[21-Jan-2026 12:37:04 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 40
+[21-Jan-2026 12:37:04 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 72
+[21-Jan-2026 12:37:04 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 95
+[21-Jan-2026 12:37:04 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 108
+[21-Jan-2026 12:37:04 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 125
+[21-Jan-2026 12:43:37 America/Fortaleza] PHP Warning:  Undefined array key "idcidade" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 7
+[21-Jan-2026 12:43:37 America/Fortaleza] PHP Warning:  Undefined array key "id" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 8
+[21-Jan-2026 12:43:37 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 11
+[21-Jan-2026 12:43:37 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 25
+[21-Jan-2026 12:43:37 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 40
+[21-Jan-2026 12:43:37 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 72
+[21-Jan-2026 12:43:37 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 95
+[21-Jan-2026 12:43:37 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 108
+[21-Jan-2026 12:43:37 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 125
+[21-Jan-2026 13:13:39 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:687
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(687): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 687
+[21-Jan-2026 13:13:46 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:687
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(687): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 687
+[21-Jan-2026 13:15:53 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:687
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(687): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 687
+[21-Jan-2026 13:20:23 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:687
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(687): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 687
+[21-Jan-2026 13:20:25 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:687
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(687): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 687
+[21-Jan-2026 13:22:59 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:998
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('45')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 998
+[21-Jan-2026 14:48:07 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:998
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('35')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 998
+[22-Jan-2026 07:38:34 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:998
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('34')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 998
+[22-Jan-2026 17:02:41 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:1046
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('33')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 1046
+[26-Jan-2026 06:28:40 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:1046
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('29')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 1046
+[26-Jan-2026 06:46:59 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:1046
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('28')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 1046
+[26-Jan-2026 10:47:23 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[26-Jan-2026 10:47:49 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[26-Jan-2026 10:54:08 America/Fortaleza] PHP Warning:  Undefined array key "idcidade" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 7
+[26-Jan-2026 10:54:08 America/Fortaleza] PHP Warning:  Undefined array key "id" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 8
+[26-Jan-2026 10:54:08 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 11
+[26-Jan-2026 10:54:08 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 25
+[26-Jan-2026 10:54:08 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 40
+[26-Jan-2026 10:54:08 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 72
+[26-Jan-2026 10:54:08 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 95
+[26-Jan-2026 10:54:08 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 108
+[26-Jan-2026 10:54:08 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 125
+[30-Jan-2026 16:17:53 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:1046
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('35')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 1046
+[30-Jan-2026 19:40:19 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:1046
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('32')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 1046
+[30-Jan-2026 23:33:38 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:1046
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('39')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 1046
+[06-Feb-2026 18:43:23 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[06-Feb-2026 18:43:32 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[07-Feb-2026 17:21:41 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:1046
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('39')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 1046
+[19-Feb-2026 14:12:46 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[19-Feb-2026 14:13:49 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[19-Feb-2026 14:17:45 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[19-Feb-2026 14:18:40 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:1046
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('50')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 1046
+[19-Feb-2026 14:19:12 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:1046
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('49')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 1046
+[19-Feb-2026 14:26:50 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[19-Feb-2026 14:27:08 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[21-Feb-2026 18:29:35 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:1046
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('28')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 1046
+[21-Feb-2026 18:36:40 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[21-Feb-2026 18:36:49 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[21-Feb-2026 18:36:51 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[21-Feb-2026 18:36:52 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[21-Feb-2026 18:36:56 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[21-Feb-2026 18:51:57 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[21-Feb-2026 18:51:59 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[21-Feb-2026 18:52:01 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[21-Feb-2026 18:52:01 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[21-Feb-2026 18:52:01 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[21-Feb-2026 18:52:03 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[21-Feb-2026 23:44:07 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[22-Feb-2026 00:10:08 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[22-Feb-2026 00:12:24 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[22-Feb-2026 00:16:16 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[22-Feb-2026 00:16:30 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[22-Feb-2026 01:16:21 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[22-Feb-2026 01:27:20 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[22-Feb-2026 11:23:12 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'user_id' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:724
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(724): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 724
+[22-Feb-2026 11:28:34 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.planos' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT * FROM `...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT * FROM `...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(148): DB::GetQueryResult('SELECT * FROM `...', false)
+#3 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(169): DB::GetDbRowById('planos', Array)
+#4 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(195): Table::_Fetch('planos', Array)
+#5 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(735): Table::Fetch('planos', Array)
+#6 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#7 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[22-Feb-2026 11:33:01 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "partner_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:827
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(814): atualiza_max_anuncios_partner(74, 10)
+#1 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(746): alteradatafim_anuncio(74, 10)
+#2 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#3 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 827
+[22-Feb-2026 11:36:40 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:842
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(842): mysqli_query(Object(mysqli), 'update partner ...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(814): atualiza_max_anuncios_partner(75, 10)
+#2 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(746): alteradatafim_anuncio(75, 10)
+#3 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(19): finalizaanuncio()
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 842
+[22-Feb-2026 11:56:13 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:1049
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('78')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 1049
+[22-Feb-2026 17:46:00 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:1049
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('90')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 1049
+[23-Feb-2026 00:57:49 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:1049
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('78')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 1049
+[23-Feb-2026 07:04:37 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:1049
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('48')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 1049
+[23-Feb-2026 07:19:25 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:1049
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('48')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 1049
+[23-Feb-2026 09:30:33 America/Fortaleza] PHP Warning:  Undefined array key "idcidade" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 7
+[23-Feb-2026 09:30:33 America/Fortaleza] PHP Warning:  Undefined array key "id" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 8
+[23-Feb-2026 09:30:33 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 11
+[23-Feb-2026 09:30:33 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 25
+[23-Feb-2026 09:30:33 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 40
+[23-Feb-2026 09:30:33 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 72
+[23-Feb-2026 09:30:33 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 95
+[23-Feb-2026 09:30:33 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 108
+[23-Feb-2026 09:30:33 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 125
+[23-Feb-2026 09:31:07 America/Fortaleza] PHP Warning:  Undefined array key "idcidade" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 7
+[23-Feb-2026 09:31:07 America/Fortaleza] PHP Warning:  Undefined array key "id" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 8
+[23-Feb-2026 09:31:07 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 11
+[23-Feb-2026 09:31:07 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 25
+[23-Feb-2026 09:31:07 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 40
+[23-Feb-2026 09:31:07 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 72
+[23-Feb-2026 09:31:07 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 95
+[23-Feb-2026 09:31:07 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 108
+[23-Feb-2026 09:31:07 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 125
+[23-Feb-2026 09:35:15 America/Fortaleza] PHP Warning:  Undefined array key "idcidade" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 7
+[23-Feb-2026 09:35:15 America/Fortaleza] PHP Warning:  Undefined array key "id" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 8
+[23-Feb-2026 09:35:15 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 11
+[23-Feb-2026 09:35:15 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 25
+[23-Feb-2026 09:35:15 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 40
+[23-Feb-2026 09:35:15 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 72
+[23-Feb-2026 09:35:15 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 95
+[23-Feb-2026 09:35:15 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 108
+[23-Feb-2026 09:35:15 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 125
+[23-Feb-2026 09:53:19 America/Fortaleza] PHP Warning:  Undefined array key "idcidade" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 7
+[23-Feb-2026 09:53:19 America/Fortaleza] PHP Warning:  Undefined array key "id" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 8
+[23-Feb-2026 09:53:19 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 11
+[23-Feb-2026 09:53:19 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 25
+[23-Feb-2026 09:53:19 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 40
+[23-Feb-2026 09:53:19 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 72
+[23-Feb-2026 09:53:19 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 95
+[23-Feb-2026 09:53:19 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 108
+[23-Feb-2026 09:53:19 America/Fortaleza] PHP Warning:  Undefined array key "tipo" in /home2/juli6348/entrenosemelhor.com.br/include/upload.php on line 125
+[24-Feb-2026 11:01:59 Brazil/East] PHP Fatal error:  Cannot redeclare getdiasplano() (previously declared in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:788) in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 797
+[01-Mar-2026 17:58:50 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:1081
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('34')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 1081
+[10-Mar-2026 00:01:06 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:2200
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(2200): mysqli_query(Object(mysqli), 'update team set...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(16): grava_id_plano()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 2200
+[10-Mar-2026 09:49:15 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:2214
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(2214): mysqli_query(Object(mysqli), 'update team set...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(16): grava_id_plano()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 2214
+[10-Mar-2026 10:01:09 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:2214
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(2214): mysqli_query(Object(mysqli), 'update team set...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(16): grava_id_plano()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 2214
+[10-Mar-2026 10:01:59 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:2214
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(2214): mysqli_query(Object(mysqli), 'update team set...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/funcoes.php(16): grava_id_plano()
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 2214
+[20-Mar-2026 17:10:16 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:1081
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('115')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 1081
+[20-Mar-2026 17:11:31 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:1081
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('115')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 1081
+[20-Mar-2026 17:12:48 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:1081
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('115')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 1081
+[20-Mar-2026 18:09:41 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "group_id" in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:1081
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/atualiza_click.php(4): atualiza_click('32')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 1081

@@ -1,0 +1,95 @@
+[30-Dec-2010 19:19:25] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 19:22:35] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 19:22:38] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 19:22:44] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 19:22:45] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 19:22:50] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 19:22:52] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 19:23:29] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 19:23:34] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 19:23:36] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 19:23:37] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 19:23:39] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 19:23:53] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 19:24:08] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 19:24:09] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 19:24:14] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 19:24:14] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 19:27:23] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 19:27:24] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 19:28:37] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 19:28:37] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 21:40:13] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[11-Dec-2025 13:43:22 Brazil/East] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:1138
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(1138): in_array('admin', NULL)
+#1 /home2/juli6348/entrenosemelhor.com.br/vipmin/system/index.php(5): need_auth('admin')
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 1138
+[11-Dec-2025 16:27:45 Brazil/East] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:1138
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(1138): in_array('design', NULL)
+#1 /home2/juli6348/entrenosemelhor.com.br/vipmin/system/logo.php(5): need_auth('design')
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 1138
+[11-Dec-2025 16:30:07 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.invite' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/vipmin/system/option.php:8
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/system/option.php(8): mysqli_query(Object(mysqli), 'ALTER TABLE `in...')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/vipmin/system/option.php on line 8
+[19-Dec-2025 10:59:04 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "key" in /home2/juli6348/entrenosemelhor.com.br/include/function/configure.php:44
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/configure.php(39): _configure_save('db', Array)
+#1 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(538): configure_save()
+#2 /home2/juli6348/entrenosemelhor.com.br/vipmin/system/index.php(19): save_config()
+#3 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/configure.php on line 44
+[19-Dec-2025 11:09:51 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "titulo" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_system_pageadd.php:35
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/system/pageadd.php(51): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_system_pageadd.php on line 35
+[21-Jan-2026 13:26:28 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect string value: '\xF0\x9F\x93\x8C S...' for column 'value' at row 1 in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'UPDATE  `page` ...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(338): DB::Query('UPDATE  `page` ...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(152): DB::Update('page', 'help_faqs', Array)
+#3 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(143): Table::UpdateCache('page', 'help_faqs', Array)
+#4 /home2/juli6348/entrenosemelhor.com.br/vipmin/system/pageadd.php(66): Table->Update(Array)
+#5 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[21-Jan-2026 13:26:35 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect string value: '\xF0\x9F\x93\x8C S...' for column 'value' at row 1 in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'UPDATE  `page` ...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(338): DB::Query('UPDATE  `page` ...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(152): DB::Update('page', 'help_faqs', Array)
+#3 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(143): Table::UpdateCache('page', 'help_faqs', Array)
+#4 /home2/juli6348/entrenosemelhor.com.br/vipmin/system/pageadd.php(66): Table->Update(Array)
+#5 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[21-Jan-2026 13:28:13 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect string value: '\xF0\x9F\x93\x8C S...' for column 'value' at row 1 in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'UPDATE  `page` ...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(338): DB::Query('UPDATE  `page` ...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(152): DB::Update('page', 'help_faqs', Array)
+#3 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(143): Table::UpdateCache('page', 'help_faqs', Array)
+#4 /home2/juli6348/entrenosemelhor.com.br/vipmin/system/pageadd.php(66): Table->Update(Array)
+#5 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[21-Jan-2026 13:28:25 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect string value: '\xF0\x9F\x93\x8C S...' for column 'value' at row 1 in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'UPDATE  `page` ...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(338): DB::Query('UPDATE  `page` ...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(152): DB::Update('page', 'help_faqs', Array)
+#3 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(143): Table::UpdateCache('page', 'help_faqs', Array)
+#4 /home2/juli6348/entrenosemelhor.com.br/vipmin/system/pageadd.php(66): Table->Update(Array)
+#5 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[21-Jan-2026 14:02:47 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect string value: '\xF0\x9F\x98\x8A<b...' for column 'value' at row 1 in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'INSERT INTO `pa...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(270): DB::Query('INSERT INTO `pa...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(118): DB::Insert('page', Array)
+#3 /home2/juli6348/entrenosemelhor.com.br/vipmin/system/pageadd.php(33): Table->Insert(Array)
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114

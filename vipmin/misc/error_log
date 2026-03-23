@@ -1,0 +1,101 @@
+[30-Dec-2010 19:18:59] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 19:19:26] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 19:23:56] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 21:40:21] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 21:40:24] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 21:41:14] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 21:41:23] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 21:41:57] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 21:42:03] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 21:58:30] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 21:58:38] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 21:58:42] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 21:58:45] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 22:09:30] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 22:09:37] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 22:12:31] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 22:15:18] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 22:15:19] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 22:21:23] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 22:21:29] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 22:21:33] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 22:21:36] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 22:46:19] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 22:47:00] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 22:49:24] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 22:49:31] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 22:49:35] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 22:49:40] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 22:49:43] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 22:49:46] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 22:50:09] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[02-Jan-2011 13:13:24] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[02-Jan-2011 13:13:34] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[02-Jan-2011 13:13:37] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[02-Jan-2011 13:21:06] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[02-Jan-2011 13:21:08] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[05-Jan-2011 22:14:25] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[11-Dec-2025 13:43:03 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.depoimentos' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php:11
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php(11): mysqli_query(Object(mysqli), 'SHOW COLUMNS FR...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php(15): table_has_col(Object(mysqli), 'depoimentos', 'create_time')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php(66): first_existing_col(Object(mysqli), 'depoimentos', Array)
+#3 /home2/juli6348/entrenosemelhor.com.br/vipmin/misc/index.php(8): include('/home2/juli6348...')
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php on line 11
+[11-Dec-2025 13:44:10 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.depoimentos' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php:11
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php(11): mysqli_query(Object(mysqli), 'SHOW COLUMNS FR...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php(15): table_has_col(Object(mysqli), 'depoimentos', 'create_time')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php(66): first_existing_col(Object(mysqli), 'depoimentos', Array)
+#3 /home2/juli6348/entrenosemelhor.com.br/vipmin/misc/index.php(8): include('/home2/juli6348...')
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php on line 11
+[11-Dec-2025 13:44:10 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.depoimentos' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php:11
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php(11): mysqli_query(Object(mysqli), 'SHOW COLUMNS FR...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php(15): table_has_col(Object(mysqli), 'depoimentos', 'create_time')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php(66): first_existing_col(Object(mysqli), 'depoimentos', Array)
+#3 /home2/juli6348/entrenosemelhor.com.br/vipmin/misc/index.php(8): include('/home2/juli6348...')
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php on line 11
+[11-Dec-2025 13:44:16 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.depoimentos' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php:11
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php(11): mysqli_query(Object(mysqli), 'SHOW COLUMNS FR...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php(15): table_has_col(Object(mysqli), 'depoimentos', 'create_time')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php(66): first_existing_col(Object(mysqli), 'depoimentos', Array)
+#3 /home2/juli6348/entrenosemelhor.com.br/vipmin/misc/index.php(8): include('/home2/juli6348...')
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php on line 11
+[11-Dec-2025 13:44:16 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.depoimentos' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php:11
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php(11): mysqli_query(Object(mysqli), 'SHOW COLUMNS FR...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php(15): table_has_col(Object(mysqli), 'depoimentos', 'create_time')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php(66): first_existing_col(Object(mysqli), 'depoimentos', Array)
+#3 /home2/juli6348/entrenosemelhor.com.br/vipmin/misc/index.php(8): include('/home2/juli6348...')
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php on line 11
+[11-Dec-2025 13:44:22 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.depoimentos' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php:11
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php(11): mysqli_query(Object(mysqli), 'SHOW COLUMNS FR...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php(15): table_has_col(Object(mysqli), 'depoimentos', 'create_time')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php(66): first_existing_col(Object(mysqli), 'depoimentos', Array)
+#3 /home2/juli6348/entrenosemelhor.com.br/vipmin/misc/index.php(8): include('/home2/juli6348...')
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php on line 11
+[11-Dec-2025 13:44:26 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.depoimentos' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php:11
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php(11): mysqli_query(Object(mysqli), 'SHOW COLUMNS FR...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php(15): table_has_col(Object(mysqli), 'depoimentos', 'create_time')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php(66): first_existing_col(Object(mysqli), 'depoimentos', Array)
+#3 /home2/juli6348/entrenosemelhor.com.br/vipmin/misc/index.php(8): include('/home2/juli6348...')
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php on line 11
+[11-Dec-2025 13:44:30 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.depoimentos' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php:11
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php(11): mysqli_query(Object(mysqli), 'SHOW COLUMNS FR...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php(15): table_has_col(Object(mysqli), 'depoimentos', 'create_time')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php(66): first_existing_col(Object(mysqli), 'depoimentos', Array)
+#3 /home2/juli6348/entrenosemelhor.com.br/vipmin/misc/index.php(8): include('/home2/juli6348...')
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_misc_index.php on line 11

@@ -1,0 +1,242 @@
+[21-Jan-2026 13:21:07 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.order' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT COUNT(1)...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT COUNT(1)...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(214): DB::GetQueryResult('SELECT COUNT(1)...', true)
+#3 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(547): Table::Count('order', 'WHERE `team_id`...')
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[21-Jan-2026 13:59:16 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.order' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT COUNT(1)...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT COUNT(1)...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(214): DB::GetQueryResult('SELECT COUNT(1)...', true)
+#3 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(547): Table::Count('order', 'WHERE `team_id`...')
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[26-Jan-2026 10:48:53 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.partner' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT * FROM `...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT * FROM `...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(173): DB::GetQueryResult('SELECT * FROM `...', true, 0)
+#3 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(199): DB::LimitQuery('partner', Array)
+#4 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(311): Table::Fetch('partner', Array, 'username')
+#5 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[26-Jan-2026 11:00:31 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.partner' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT * FROM `...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT * FROM `...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(173): DB::GetQueryResult('SELECT * FROM `...', true, 0)
+#3 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(199): DB::LimitQuery('partner', Array)
+#4 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(311): Table::Fetch('partner', Array, 'username')
+#5 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[26-Jan-2026 13:20:07 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.partner' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT * FROM `...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT * FROM `...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(173): DB::GetQueryResult('SELECT * FROM `...', true, 0)
+#3 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(199): DB::LimitQuery('partner', Array)
+#4 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(311): Table::Fetch('partner', Array, 'username')
+#5 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[26-Jan-2026 15:39:11 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.partner' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT * FROM `...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT * FROM `...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(173): DB::GetQueryResult('SELECT * FROM `...', true, 0)
+#3 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(199): DB::LimitQuery('partner', Array)
+#4 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(311): Table::Fetch('partner', Array, 'username')
+#5 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[09-Feb-2026 00:29:16 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.partner' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT * FROM `...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT * FROM `...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(173): DB::GetQueryResult('SELECT * FROM `...', true, 0)
+#3 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(199): DB::LimitQuery('partner', Array)
+#4 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(311): Table::Fetch('partner', Array, 'username')
+#5 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[19-Feb-2026 13:53:40 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.order' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT COUNT(1)...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT COUNT(1)...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(214): DB::GetQueryResult('SELECT COUNT(1)...', true)
+#3 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(547): Table::Count('order', 'WHERE `team_id`...')
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[19-Feb-2026 13:53:48 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.order' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT COUNT(1)...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT COUNT(1)...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(214): DB::GetQueryResult('SELECT COUNT(1)...', true)
+#3 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(547): Table::Count('order', 'WHERE `team_id`...')
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[19-Feb-2026 13:56:38 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.partner' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT * FROM `...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT * FROM `...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(173): DB::GetQueryResult('SELECT * FROM `...', true, 0)
+#3 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(199): DB::LimitQuery('partner', Array)
+#4 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(311): Table::Fetch('partner', Array, 'username')
+#5 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[19-Feb-2026 14:04:29 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.partner' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT * FROM `...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT * FROM `...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(173): DB::GetQueryResult('SELECT * FROM `...', true, 0)
+#3 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(199): DB::LimitQuery('partner', Array)
+#4 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(311): Table::Fetch('partner', Array, 'username')
+#5 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[19-Feb-2026 14:05:29 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.partner' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT * FROM `...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT * FROM `...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(173): DB::GetQueryResult('SELECT * FROM `...', true, 0)
+#3 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(199): DB::LimitQuery('partner', Array)
+#4 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(311): Table::Fetch('partner', Array, 'username')
+#5 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[19-Feb-2026 14:05:41 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.partner' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT * FROM `...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT * FROM `...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(173): DB::GetQueryResult('SELECT * FROM `...', true, 0)
+#3 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(199): DB::LimitQuery('partner', Array)
+#4 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(311): Table::Fetch('partner', Array, 'username')
+#5 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[19-Feb-2026 14:09:08 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.order' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT COUNT(1)...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT COUNT(1)...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(214): DB::GetQueryResult('SELECT COUNT(1)...', true)
+#3 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(547): Table::Count('order', 'WHERE `team_id`...')
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[19-Feb-2026 14:10:07 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.order' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT COUNT(1)...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT COUNT(1)...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(214): DB::GetQueryResult('SELECT COUNT(1)...', true)
+#3 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(547): Table::Count('order', 'WHERE `team_id`...')
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[19-Feb-2026 14:17:59 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.order' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT COUNT(1)...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT COUNT(1)...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(214): DB::GetQueryResult('SELECT COUNT(1)...', true)
+#3 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(547): Table::Count('order', 'WHERE `team_id`...')
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[19-Feb-2026 14:20:53 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.order' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT COUNT(1)...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT COUNT(1)...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(214): DB::GetQueryResult('SELECT COUNT(1)...', true)
+#3 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(547): Table::Count('order', 'WHERE `team_id`...')
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[19-Feb-2026 14:22:59 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.order' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT COUNT(1)...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT COUNT(1)...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(214): DB::GetQueryResult('SELECT COUNT(1)...', true)
+#3 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(547): Table::Count('order', 'WHERE `team_id`...')
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[21-Feb-2026 18:38:55 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.order' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT COUNT(1)...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT COUNT(1)...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(214): DB::GetQueryResult('SELECT COUNT(1)...', true)
+#3 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(547): Table::Count('order', 'WHERE `team_id`...')
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[21-Feb-2026 18:39:32 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.order' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT COUNT(1)...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT COUNT(1)...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(214): DB::GetQueryResult('SELECT COUNT(1)...', true)
+#3 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(547): Table::Count('order', 'WHERE `team_id`...')
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[21-Feb-2026 18:53:03 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.order' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT COUNT(1)...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT COUNT(1)...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(214): DB::GetQueryResult('SELECT COUNT(1)...', true)
+#3 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(547): Table::Count('order', 'WHERE `team_id`...')
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[21-Feb-2026 18:53:16 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.order' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT COUNT(1)...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT COUNT(1)...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(214): DB::GetQueryResult('SELECT COUNT(1)...', true)
+#3 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(547): Table::Count('order', 'WHERE `team_id`...')
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[21-Feb-2026 18:53:30 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.order' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT COUNT(1)...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT COUNT(1)...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(214): DB::GetQueryResult('SELECT COUNT(1)...', true)
+#3 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(547): Table::Count('order', 'WHERE `team_id`...')
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[21-Feb-2026 18:53:40 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.order' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT COUNT(1)...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT COUNT(1)...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(214): DB::GetQueryResult('SELECT COUNT(1)...', true)
+#3 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(547): Table::Count('order', 'WHERE `team_id`...')
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[22-Feb-2026 10:40:40 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.order' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT COUNT(1)...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT COUNT(1)...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(214): DB::GetQueryResult('SELECT COUNT(1)...', true)
+#3 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(547): Table::Count('order', 'WHERE `team_id`...')
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[22-Feb-2026 10:48:16 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.order' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT COUNT(1)...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT COUNT(1)...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(214): DB::GetQueryResult('SELECT COUNT(1)...', true)
+#3 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(547): Table::Count('order', 'WHERE `team_id`...')
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[22-Feb-2026 10:50:19 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.order' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT COUNT(1)...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT COUNT(1)...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(214): DB::GetQueryResult('SELECT COUNT(1)...', true)
+#3 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(547): Table::Count('order', 'WHERE `team_id`...')
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[22-Feb-2026 11:00:41 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.order' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT COUNT(1)...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT COUNT(1)...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(214): DB::GetQueryResult('SELECT COUNT(1)...', true)
+#3 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(547): Table::Count('order', 'WHERE `team_id`...')
+#4 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[22-Feb-2026 11:13:01 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.coupon' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'SELECT * FROM `...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(220): DB::Query('SELECT * FROM `...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(173): DB::GetQueryResult('SELECT * FROM `...', false, 0)
+#3 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(199): DB::LimitQuery('coupon', Array)
+#4 /home2/juli6348/entrenosemelhor.com.br/ajax/manage.php(557): Table::Fetch('coupon', Array, 'team_id')
+#5 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114

@@ -1,0 +1,31 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+	
+<style>
+	
+	 
+
+H3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  FONT-SIZE: 24px;
+}
+ 
+</style>
+	
+	
+<div style="text-align:center">
+
+<H3>Voltaremos em breve !!!</H3>
+<br>
+<img src="https://www.tkstore.com.br/imagens/manutencao.jpg" alt="Logo" id="logo">
+	<br>
+
+	
+	 
+	
+
+</div>

@@ -1,0 +1,59 @@
+
+
+/*  LOGO ANUNCIANTE */
+.nav > li {
+	background: #40424C !important;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+	background-color: none !important;
+	color: #fff;
+	/*height: 50px;*/
+}
+@media (min-width: 768px){
+	
+	.navbar-nav>li>a {
+		padding-top: 15px;
+		padding-bottom: 0px;
+	}
+}
+.logoanunciantedkop{
+	max-height: 44px;
+    max-width: 150px;
+    margin-top: -9px;
+}
+.rmbkack{
+	    background-color: #40424c !important;
+	
+}
+
+/*  FIM  LOGO ANUNCIANTE */
+
+
+/* PLANOS DE ANUNCIOS*/
+
+.descricaoDestaque {
+    font-family: "Verdana","Arial","Helvetica",sans-serif;
+    font-size: 14px;
+    height: 120px;
+    margin-left: -5px;
+    margin-top: 6px;
+	   width: 99% !important;
+}
+
+.boxplan {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+
+/* FIM PLANOS DE ANUNCIOS*/

@@ -1,0 +1,6 @@
+24/05/2023 14:33:57 - grava_id_plano: update team set id_plano='1' where id=70
+24/05/2023 14:35:03 - 70 - Os dias para o plano id 10 são 3 dia(s) 
+24/05/2023 14:35:03 - 70 - Periodo de veiculacao do anuncio atualizados com sucesso
+24/05/2023 14:35:03 - plano_id: 10 - atualiza_max_anuncios_partner
+24/05/2023 14:35:03 - plano_id: 10 - incrementa max_anuncios
+24/05/2023 14:35:03 - 70 - Erro ao atualizar o max_anuncio do usuario: update partner set max_anuncios = max_anuncios + 1 where id=. You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1

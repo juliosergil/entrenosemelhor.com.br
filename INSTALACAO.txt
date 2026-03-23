@@ -1,0 +1,21 @@
+Faça download do manual de instalação da plataforma em sua hospedagem
+
+https://drive.google.com/file/d/154O2rQmJRSnD5IuGVkg7pY9TNa2lFM5z/view
+
+Erro na criação do usuário admininstrador ?
+Acesse o seu banco de dados, como por exemplo o phpmyadmin, e execute a query abaixo
+
+delete from user where id = 1;
+INSERT INTO `user` (`id`,  `email`, `username`, `realname`, `password`,  `manager`,   `senha`) VALUES
+(1, 'suportevipcom@gmail.com', 'admin', 'Administrador',  '325825be566fa25abab599ff5e00442b',   'Y',  '1234567890' );
+
+Acesse o vipmin com os dados
+login: admin
+senha: 1234567890
+
+
+
+Link para contratar serviço de instalação: https://www.tkstore.com.br/whmcs/cart.php?a=add&pid=602
+
+Veja os termos de uso do suporte 
+https://www.vipcomsistemas.com.br/manualdeservicosvipcomsistemas.pdf

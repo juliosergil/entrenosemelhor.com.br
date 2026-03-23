@@ -1,0 +1,10 @@
+19/06/2023 17:42:47 - 72 - Os dias para o plano id 10 são 3 dia(s) 
+19/06/2023 17:42:47 - 72 - Periodo de veiculacao do anuncio atualizados com sucesso
+19/06/2023 17:42:47 - plano_id: 10 - atualiza_max_anuncios_partner
+19/06/2023 17:42:47 - plano_id: 10 - incrementa max_anuncios
+19/06/2023 17:42:47 - 72 - Erro ao atualizar o max_anuncio do usuario: update partner set max_anuncios = max_anuncios + 1 where id=. You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+19/06/2023 22:45:40 - 73 - Os dias para o plano id 10 são 3 dia(s) 
+19/06/2023 22:45:40 - 73 - Periodo de veiculacao do anuncio atualizados com sucesso
+19/06/2023 22:45:40 - plano_id: 10 - atualiza_max_anuncios_partner
+19/06/2023 22:45:40 - plano_id: 10 - incrementa max_anuncios
+19/06/2023 22:45:40 - 73 - Erro ao atualizar o max_anuncio do usuario: update partner set max_anuncios = max_anuncios + 1 where id=. You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1

@@ -1,0 +1,652 @@
+
+:root{
+  --bg:#f3f6fb;
+  --panel:#ffffff;
+  --card:#ffffff;
+  --card2:#ffffff;
+  --stroke:#e6eaf0;
+  --text:#172133;
+  --muted:#637086;
+  --primary:#2563eb;
+  --primary-2:#1d4ed8;
+  --ok:#16a34a;
+  --shadow: 0 8px 20px rgba(24,39,75,.06);
+  --radius:14px;
+}
+
+/* ---------- Espaçamentos gerais ---------- */
+:root{
+  --gap-1: 8px;
+  --gap-2: 12px;
+  --gap-3: 16px;
+  --gap-4: 24px;
+  --gap-5: 32px;
+}
+
+  body{background:var(--bg);}
+  #content.mainwide{background:transparent;border:none;}
+
+  /* container geral */
+  .admin-dashboard{display:grid;gap:24px;margin:8px 0 32px}
+
+  /* Quick actions (atalhos) */
+  .quick-actions{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+    gap:16px;
+  }
+  .tile{
+    display:flex;align-items:center;gap:12px;
+    padding:14px 16px;background:linear-gradient(180deg,var(--card),var(--card2));
+    border:1px solid var(--stroke);border-radius:var(--radius);
+    color:var(--text);text-decoration:none;box-shadow:var(--shadow);
+    transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+  }
+  .tile:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(0,0,0,.28);border-color:#2a4461}
+  .tile img{width:38px;height:38px;object-fit:contain}
+  .tile span{font-weight:600}
+
+  /* KPIs */
+  .kpis{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+  .card{
+    background:linear-gradient(180deg,var(--card),var(--card2));
+    border:1px solid var(--stroke);border-radius:var(--radius);
+    box-shadow:var(--shadow);padding:18px 18px 14px;color:var(--text)
+  }
+  .card h3{margin:0 0 10px;font-size:18px}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .stat small{display:block;color:var(--muted);margin-bottom:6px}
+  .stat strong{font-size:26px;letter-spacing:.3px}
+
+  /* Tabelas */
+  .panel-block{background:linear-gradient(180deg,var(--card),var(--card2));
+    border:1px solid var(--stroke);border-radius:var(--radius);
+    box-shadow:var(--shadow);padding:12px 16px;color:var(--text)}
+  .panel-block h3{margin:6px 0 14px;font-size:20px}
+  .table{width:100%;border-collapse:separate;border-spacing:0 8px}
+  .table thead th{color:var(--muted);font-weight:600;text-align:left;padding:10px 12px}
+  .table tbody tr{background:#0c1a2a;border:1px solid var(--stroke)}
+  .table tbody tr td{padding:12px}
+  .table tbody tr:hover{background:#0e2031}
+  .nowrap{white-space:nowrap}
+
+  /* Responsivo: tabela em “cards” no mobile */
+  @media (max-width:900px){
+    .table thead{display:none}
+    .table tbody tr{display:grid;grid-template-columns:1fr;row-gap:8px;padding:10px;border-radius:10px}
+    .table tbody td{display:flex;justify-content:space-between;gap:8px}
+    .table tbody td::before{
+      content:attr(data-label);color:var(--muted);font-weight:600
+    }
+  }
+  
+  /* ajustes pontuais para o light */
+body{background:var(--bg); color:var(--text);}
+.tile{background:linear-gradient(180deg,var(--card),var(--card2)); border-color:var(--stroke);}
+.tile:hover{border-color:#cfd6e3;}
+.card,.panel-block{background:var(--panel); border-color:var(--stroke);}
+.table thead th{color:var(--muted);}
+.table tbody tr{background:#fff; border-color:var(--stroke);}
+.table tbody tr:hover{background:#f5f8ff;}
+.dashboard ul li a{color:var(--text);}
+
+/* dá respiro abaixo do menu superior */
+#menu,
+.admin-nav,
+.top-nav{ 
+  margin-bottom: var(--gap-5);
+}
+
+/* respiro extra no container principal do dashboard */
+#content.mainwide{
+  margin-top: var(--gap-4);
+}
+
+/* cards/atalhos do painel: coluna não ficar colada uma na outra */
+.cpanel{ gap: var(--gap-3); }        /* se estiver usando flex/grid */
+.cpanel .icon-wrapper{ margin-bottom: var(--gap-3); }
+
+/* linhas de KPIs (resumos) e tabelas */
+.summary-row,
+.kpi-row,
+.panel{ 
+  margin-top: var(--gap-4);
+}
+
+/* melhora o acolchoamento das caixas */
+.tile, .card, .adminlist{
+  margin-top: var(--gap-3);
+}
+
+/* ---------- Tabelas do dashboard (.adminlist) ---------- */
+
+/* Cabeçalho */
+.panel .adminlist tr:first-child th {
+  background: #eef2f7;      /* cor do header */
+  font-weight: 600;
+  color: #273445;
+}
+
+/* Linhas listradas (começa suave) */
+.panel .adminlist tr:nth-child(odd) th,
+.panel .adminlist tr:nth-child(odd) td {
+  background: #fbfdff;      /* branco azulado */
+}
+
+.panel .adminlist tr:nth-child(even) th,
+.panel .adminlist tr:nth-child(even) td {
+  background: #f4f7fc;      /* cinza-azulado leve */
+}
+
+/* Hover nas linhas de dados (não no cabeçalho) */
+.panel .adminlist tr:not(:first-child):hover > th,
+.panel .adminlist tr:not(:first-child):hover > td {
+  background: #e9f2ff;      /* realce discreto */
+}
+
+/* Bordas e espaçamentos opcionais para ficar mais “card/clean” */
+.panel .adminlist {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+}
+.panel .adminlist th,
+.panel .adminlist td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e6ebf1;
+}
+.panel .adminlist tr:last-child th,
+.panel .adminlist tr:last-child td {
+  border-bottom: 0;
+}
+/* Zebra suave nas tabelas dos blocos do dashboard */
+.panel-block .table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.panel-block .table thead th {
+  background: #ffffff;           /* header permanece branco */
+  color: #273445;
+  font-weight: 600;
+  position: sticky;              /* opcional: fixa o header se a lista for longa */
+  top: 0;
+  z-index: 1;
+}
+
+/* Linhas alternadas (aplica só nos dados) */
+.panel-block .table tbody tr:nth-child(odd) td {
+  background-color: #fbfdff;     /* branco azulado bem leve */
+}
+.panel-block .table tbody tr:nth-child(even) td {
+  background-color: #f4f7fc;     /* cinza/azulado muito suave */
+}
+
+/* Hover discreto */
+.panel-block .table tbody tr:hover td {
+  background-color: #e9f2ff;     /* realce leve no hover */
+  transition: background-color .15s ease;
+}
+
+/* Bordas sutis e espaçamento */
+.panel-block .table th,
+.panel-block .table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e8edf3;
+}
+.panel-block .table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+/* Celulas que usam .nowrap continuam sem quebra */
+.panel-block .table .nowrap {
+  white-space: nowrap;
+}
+
+/* Paleta e tokens */
+:root{
+  --qa-bg: #f5f7fb;
+  --qa-card: #ffffff;
+  --qa-line: #e6ebf3;
+  --qa-text: #0f1f3a;
+  --qa-muted:#6b778c;
+  --qa-primary:#2563eb;
+  --qa-primary-weak:#eff4ff;
+  --qa-radius:16px;
+  --qa-shadow:0 8px 24px rgba(16,24,40,.08);
+  --qa-shadow-sm:0 4px 14px rgba(16,24,40,.06);
+}
+
+/* Grid responsivo */
+.quick-actions.modern{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap:14px;
+  margin: 4px 0 10px;
+}
+
+/* Card */
+.quick-actions.modern .tile{
+  display:flex; align-items:center; gap:12px;
+  background: linear-gradient(180deg,#fff 0%, #fafcff 100%);
+  border:1px solid var(--qa-line);
+  border-radius: var(--qa-radius);
+  box-shadow: var(--qa-shadow-sm);
+  padding: 14px 16px;
+  text-decoration:none;
+  color: var(--qa-text);
+  transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease, background-color .2s ease;
+}
+
+/* Ícone (SVG) */
+.quick-actions.modern .tile .icon{
+  width: 36px; height: 36px; flex: 0 0 36px;
+  color: var(--qa-primary);
+}
+
+/* Texto */
+.quick-actions.modern .tile span{
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Hover/focus */
+.quick-actions.modern .tile:hover,
+.quick-actions.modern .tile:focus{
+  transform: translateY(-2px); 
+  box-shadow: var(--qa-shadow);
+  border-color: rgba(37,99,235,.35);
+  background-color: var(--qa-primary-weak);
+}
+
+/* Versão compacta em telas menores */
+@media (max-width: 880px){
+  .quick-actions.modern{
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap:12px;
+  }
+  .quick-actions.modern .tile .icon{ width:32px; height:32px; }
+}
+
+
+/* Número grande junto ao título do card */
+.kpis .card h3{display:flex;align-items:center;gap:.75rem;margin-bottom:.5rem}
+.kpis .card h3 .spantotal{
+  display:inline-block;min-width:54px;padding:.25rem .5rem;border-radius:10px;
+  font-weight:700;font-size:1rem;line-height:1; text-align:center;
+  background:linear-gradient(180deg,#2563eb,#22d3ee); color:#fff;
+}
+/* Cartas extras (listas) */
+.panel-grid{display:grid;grid-template-columns:1fr;gap:16px}
+.panel-block .table{width:100%}
+.panel-block .table th,.panel-block .table td{padding:8px 10px}
+.badge-soft{font-size:.8rem;padding:.2rem .5rem;border-radius:8px;background:#eef4ff;color:#2746cc}
+.small-muted{color:#667085;font-size:.86rem}
+
+/* ====== Tabelas do dashboard (listas TOPs) ====== */
+/* Use nas tabelas dessas seções: “receberam curtidas”, “deram curtidas”,
+   “perfis mais visualizados”, “quem mais enviou mensagens”, etc.            */
+
+:root{
+  /* Mesmas larguras em TODAS as tabelas para manter alinhamento */
+  --dash-rank-col: 48px;     /* coluna do #   */
+  --dash-metric-col: 120px;  /* coluna da métrica (Curtidas/Views/Msgs) */
+  --dash-cell-x: 12px;
+  --dash-cell-y: 10px;
+}
+
+/* base */
+.admin-dashboard .panel-block .table{
+  width: 100%;
+  table-layout: fixed;        /* garante que as larguras abaixo sejam respeitadas */
+  border-collapse: collapse;
+}
+
+/* células */
+.admin-dashboard .panel-block .table th,
+.admin-dashboard .panel-block .table td{
+  padding: var(--dash-cell-y) var(--dash-cell-x);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;    /* evita quebrar nomes longos e mantém alinhado */
+  vertical-align: middle;
+  font-variant-numeric: tabular-nums; /* números com largura fixa = colunas retinhas */
+}
+
+/* # (primeira coluna) — largura fixa e centralizada */
+.admin-dashboard .panel-block .table th:nth-child(1),
+.admin-dashboard .panel-block .table td:nth-child(1){
+  width: var(--dash-rank-col);
+  text-align: center;
+}
+
+/* Usuário (segunda coluna) — ocupa o espaço flexível entre a 1ª e a última */
+.admin-dashboard .panel-block .table th:nth-child(2),
+.admin-dashboard .panel-block .table td:nth-child(2){
+  text-align: left;
+}
+
+/* Métrica (última coluna: Curtidas/Visualizações/Mensagens) — fixa e à direita  */
+.admin-dashboard .panel-block .table th:last-child,
+.admin-dashboard .panel-block .table td:last-child{
+  width: var(--dash-metric-col);
+  text-align: right;
+}
+
+/* Linha zebrada e bordas sutis (opcional) */
+.admin-dashboard .panel-block .table tbody tr{
+  border-top: 1px solid #eef1f5;
+}
+.admin-dashboard .panel-block .table tbody tr:nth-child(odd){
+  background: #fafbfc;
+}
+
+/* Títulos/legendas que não devem quebrar */
+.admin-dashboard .nowrap{ white-space: nowrap; }
+
+/* Caso alguma tabela tenha só 2 colunas (# e Métrica), force a 2ª como métrica */
+.admin-dashboard .panel-block .table.dash-two-cols th:nth-child(2),
+.admin-dashboard .panel-block .table.dash-two-cols td:nth-child(2){
+  width: var(--dash-metric-col);
+  text-align: right;
+}
+
+
+/* Grid compacto: 3 cards por linha */
+.vip-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:18px 0}
+@media(max-width:1080px){.vip-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){.vip-grid{grid-template-columns:1fr}}
+
+/* Card */
+.vip-card{
+  background:#fff;border:1px solid #e9edf3;border-radius:14px;
+  box-shadow:0 10px 24px rgba(16,24,40,.06);
+  padding:18px 18px 14px
+}
+.vip-card h3{margin:0 0 10px;font-size:18px;font-weight:800;color:#0f172a}
+.vip-tag{display:inline-block;background:#1d4ed8;color:#fff;font-weight:800;
+  font-size:12px;padding:2px 10px;border-radius:999px;margin-bottom:10px}
+.vip-list{margin:8px 0 0;padding:0;list-style:none}
+.vip-list li{display:flex;align-items:center;justify-content:space-between;
+  padding:8px 0;border-top:1px dashed #e9edf3;font-weight:700}
+.vip-list li span{font-weight:900;color:#0b1325}
+.vip-foot{margin-top:10px;font-size:13px}
+.badge{display:inline-block;border-radius:8px;padding:4px 8px;font-weight:800;font-size: 0.95rem !important;}
+.badge-ok{background:#e8f7ef;color:#117a41}
+.badge-warn{background:#fff1f2;color:#be123c}
+.badge-total{background:#eef2ff;color:#3730a3}
+.kpi-small{font-size:18px;font-weight:900;color:#0b1325}
+
+/* Botões de atalho do topo */
+.header-actions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:10px 0 6px}
+.hbtn{
+  display:flex;align-items:center;gap:10px;padding:14px;border-radius:12px;
+  background:linear-gradient(180deg,#f7f9ff 0%,#fff 100%);
+  border:1px solid #e9edf3;font-weight:800;color:#0f172a;box-shadow:0 8px 24px rgba(16,24,40,.06)
+}
+.hbtn i{font-style:normal;opacity:.7}
+.vip-quickgrid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:12px;margin:8px 0 18px
+}
+.vip-qitem{display:flex;align-items:center;gap:10px;padding:12px 14px;border:1px solid #E6ECF5;border-radius:14px;background:#fff;
+  font-weight:700;color:#0f172a;text-decoration:none;box-shadow:0 6px 16px rgba(16,24,40,.06)}
+.vip-qicon{font-size:20px}
+ .tile .qicon{ width:22px; height:22px; color:#2563eb }
+ 
+ @media (max-width:700px){
+  .vip-quickgrid{ display:none }
+													
+} 
+
+/* Base dos cards (caso queira reforçar) */
+.vip-quickgrid .tile,
+.vmob-quick .tile {
+  border-radius: 14px;
+  border: 1px solid transparent;
+  transition: background .2s ease, box-shadow .2s ease, transform .15s ease;
+}
+
+/* 1º card – azul suave */
+.vip-quickgrid .tile:nth-child(1),
+.vmob-quick .tile:nth-child(1) {
+  background: #E7F0FF;
+  color: #2563EB;
+}
+
+/* 2º card – verde suave */
+.vip-quickgrid .tile:nth-child(2),
+.vmob-quick .tile:nth-child(2) {
+  background: #E6FFF6;
+  color: #0F9D58;
+}
+
+/* 3º card – laranja suave */
+.vip-quickgrid .tile:nth-child(3),
+.vmob-quick .tile:nth-child(3) {
+  background: #FFF4E6;
+  color: #EA7A1F;
+}
+
+/* 4º card – roxo suave */
+.vip-quickgrid .tile:nth-child(4),
+.vmob-quick .tile:nth-child(4) {
+  background: #F3ECFF;
+  color: #7C3AED;
+}
+
+/* Efeito de hover (opcional) */
+.vip-quickgrid .tile:hover,
+.vmob-quick .tile:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+}
+
+/* Dashboard: cards em tom cinza/futurista único */
+.vip-grid .vip-card {
+  background:#fff;
+  border-radius: 20px;
+  border: 1px solid rgba(148, 163, 184, 0.55);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+  color: #0f172a;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px); /* efeito “glass” futurista */
+  transition: box-shadow .18s ease, transform .18s ease;
+}
+
+/* Faixa superior com gradiente discreto (toque futurista) */
+.vip-grid .vip-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(90deg, #6366f1, #22d3ee, #4ade80);
+  opacity: .9;
+}
+
+/* Hover sutil */
+.vip-grid .vip-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 22px 50px rgba(15, 23, 42, 0.16);
+}
+
+/* =======================
+   VIP QUICKGRID — ADMIN LOOK
+   ======================= */
+
+.vip-quickgrid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  padding:10px;
+  margin:12px 0 18px;
+
+  background:#f6f8fb;
+  border:1px solid #e4e8f0;
+  border-radius:12px;
+}
+
+.vip-quickgrid .tile{
+  --acc:#2563eb;
+
+  flex:1 1 260px;
+  min-height:54px;
+
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  padding:12px 14px;
+  border-radius:10px;
+
+  background:#fff;
+  border:1px solid #e5e7eb;
+  box-shadow: 0 1px 2px rgba(16,24,40,.06);
+
+  text-decoration:none;
+  color:#0f172a;
+  position:relative;
+
+  transition: background .15s ease, border-color .15s ease, box-shadow .15s ease;
+}
+
+/* faixa lateral “admin” */
+.vip-quickgrid .tile::before{
+  content:"";
+  position:absolute;
+  left:0; top:0; bottom:0;
+  width:4px;
+  background: var(--acc);
+  border-top-left-radius:10px;
+  border-bottom-left-radius:10px;
+}
+
+/* ícone em caixinha */
+.vip-quickgrid .tile .qicon{
+  width:18px;
+  height:18px;
+  flex:0 0 auto;
+
+  padding:8px;
+  border-radius:10px;
+
+  background:#f3f5f9;
+  border:1px solid #e6eaf2;
+  color: var(--acc);
+}
+
+/* texto com cara de menu admin */
+.vip-quickgrid .tile span{
+  font-weight:700;
+  font-size:14px;
+  letter-spacing:.2px;
+}
+
+/* hover/focus: clássico de painel */
+.vip-quickgrid .tile:hover{
+  background:#fbfcfe;
+  border-color:#cfd6e4;
+  box-shadow: 0 6px 18px rgba(16,24,40,.10);
+}
+
+.vip-quickgrid .tile:focus-visible{
+  outline:none;
+  border-color: rgba(37,99,235,.55);
+  box-shadow: 0 0 0 3px rgba(37,99,235,.18), 0 6px 18px rgba(16,24,40,.10);
+}
+
+/* cores por item (bem discreto) */
+.vip-quickgrid .tile:nth-child(1){ --acc:#2563eb; } /* Info */
+.vip-quickgrid .tile:nth-child(2){ --acc:#0f766e; } /* Config */
+.vip-quickgrid .tile:nth-child(3){ --acc:#b45309; } /* Logo */
+.vip-quickgrid .tile:nth-child(4){ --acc:#6d28d9; } /* Cores */
+
+/* responsivo */
+@media (max-width: 680px){
+  .vip-quickgrid{ padding:8px; }
+  .vip-quickgrid .tile{ flex-basis:100%; } 
+}
+ 
+ 
+ /* FORÇA 2 tiles por linha no mobile (vmob-quick) */
+.vmob-quick{
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+}
+
+.vmob-quick > .tile{
+  width: calc(50% - 5px) !important;   /* 2 colunas certinho */
+  min-width: calc(50% - 5px) !important;
+  height: 78px !important;            /* mesma altura */
+  border-radius: 0 !important;        /* sem arredondado */
+  box-sizing: border-box !important;
+
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+/* só pra telas MUITO pequenas (opcional): continua 2 por linha, mas menor */
+@media (max-width: 360px){
+  .vmob-quick > .tile{
+    height: 70px !important;
+  }
+}
+
+/* ===== vmob-quick: 2 por linha, sem corte ===== */
+.vmob-quick{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  gap:12px !important;
+  padding:10px !important;
+}
+
+.vmob-quick > .tile{
+  width: calc(100% - 6px) !important;
+  box-sizing: border-box !important;
+
+  /* altura e espaçamento que cabem o conteúdo */
+  height: auto !important;
+  min-height: 92px !important;
+  padding: 12px 10px !important;
+
+  border-radius: 0 !important;
+
+  display:flex !important;
+  flex-direction: column !important;   /* empilha ícone + texto */
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 8px !important;
+
+  overflow: hidden !important;         /* evita “vazar” */
+}
+
+/* ícone não pode encolher */
+.vmob-quick .tile .qicon{
+  flex: 0 0 auto !important;
+  width: 22px !important;
+  height: 22px !important;
+}
+
+/* texto centralizado, no máximo 2 linhas, sem cortar feio */
+.vmob-quick .tile span{
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 2 !important;
+  overflow: hidden !important;
+
+  text-align: center !important;
+  line-height: 1.15 !important;
+  font-size: 13px !important;
+  max-width: 100% !important;
+  word-break: break-word !important;
+}
+
+/* telas muito pequenas: aumenta um pouco mais */
+@media (max-width: 360px){
+  .vmob-quick > .tile{ min-height: 102px !important; }
+}
+

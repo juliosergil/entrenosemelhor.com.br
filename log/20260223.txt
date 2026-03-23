@@ -1,0 +1,4 @@
+23/02/2026 10:33:31 - 95 - Os dias para o plano id 10 são 3 dia(s) 
+23/02/2026 10:33:31 - 95 - Periodo de veiculacao do anuncio atualizados com sucesso
+23/02/2026 10:33:31 - plano_id: 10 - atualiza_max_anuncios_partner para team_id: 95
+23/02/2026 10:33:31 - Erro: partner_id inválido para team_id 95.

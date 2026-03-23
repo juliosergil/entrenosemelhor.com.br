@@ -1,0 +1,16 @@
+.blog { margin-top: 20px; margin-bottom: 20px; }
+.blog a {text-decoration:none;}
+.blog a:hover{ text-decoration: none; }
+.blog h2{
+    font-size: 40px;
+    line-height: 40px;
+    color: #2e2e2e;
+    font-weight: 400;
+    margin-bottom: 15px;}
+
+.head-desc h3{ font-size: 20px;}
+.head-desc p{ font-size: 15px;}
+.head-desc h3{ font-size: 20px;}
+.head-desc a {text-decoration:none;}
+.head-desc a:hover{ text-decoration: none; }
+

@@ -1,0 +1,16 @@
+O pagseguro alterou a forma como os sites devem fazer a integração.
+Agora você deve acessar o Vipmin no menu plano, clique em editar o plano e informar o link de pagamento deste plano.
+
+Para criar um link de pagamento de um plano específico, segue as etapas abaixo
+
+Acesse a sua conta www.pagseguro.com.br com seu login e no menu esquerdo, clique em Vendas e depois em Link de Pagamento, escreva o nome do plano, valor que deseja e prossiga até salvar, copie o link de pagamento gerado e salve aqui neste campo. Faça este procedimento para todos os planos. Cada link de pagamento terá uma descrição e valor diferente.
+Além do pagseguro, outros gateways de pagamento também aceitam geração de link de pagamento, verifique com o seu gateway.
+
+Pagseguro
+
+https://www.tkstore.com.br/imagens/linkpag_1.jpg 
+https://www.tkstore.com.br/imagens/linkpag_2.jpg
+https://www.tkstore.com.br/imagens/linkpag_3.jpg 
+https://www.tkstore.com.br/imagens/linkpag_4.jpg
+
+ 

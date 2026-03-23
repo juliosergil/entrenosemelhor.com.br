@@ -1,0 +1,1 @@
+09/12/2023 00:06:41 - grava_id_plano: update team set id_plano='9' where id=78

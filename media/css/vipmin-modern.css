@@ -1,0 +1,2993 @@
+/* ===== Vipmin Modern Override ================================================= */
+/* Paleta e tokens */
+:root{
+  --bg:#f6f7fb;
+  --surface:#ffffff;
+  --surface-2:#f1f5f9;
+  --line:#e5e7eb;
+  --muted:#64748b;
+  --text:#0f172a;
+  --text-weak:#334155;
+  --primary:#2579eb;
+  --primary-600:#1e63bf;
+  --success:#16a34a;
+  --danger:#dc2626;
+  --warning:#f59e0b;
+  --radius:10px;
+  --shadow:0 1px 2px rgba(0,0,0,.05),0 8px 24px rgba(2,6,23,.06);
+}
+
+/* Base tipográfica e fundo */
+html { font-size: 14px; }
+body{
+  background: var(--bg) !important;
+  color: var(--text) !important;
+  font: 500 14px/1.45 "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", sans-serif !important;
+}
+
+/* Cards/box padrão */
+.option_box,
+.option_box_small,
+.table-top,
+.form-contain{
+  background: var(--surface) !important;
+  border: 1px solid var(--line) !important;
+  outline: none !important;
+  border-radius: var(--radius) !important;
+  box-shadow: var(--shadow) !important;
+}
+
+/* Títulos */
+#content .head h2,
+#content .title h3,
+h4{
+  color: var(--text) !important;
+  text-shadow: none !important;
+}
+h4{ font-weight:600 !important }
+
+/* Botões (padroniza inputs/botões antigos) */
+button,
+input[type=button],
+input[type=submit],
+input.formbutton,
+button.formbutton,
+button.formbutton2{
+  background: var(--primary) !important;
+  border: 1px solid var(--primary-600) !important;
+  color:#fff !important;
+  border-radius: 8px !important;
+  padding: .55rem .9rem !important;
+  letter-spacing: .01em !important;
+  cursor: pointer !important;
+  transition: filter .15s ease, transform .02s ease !important;
+}
+button:hover,
+input.formbutton:hover{ filter: brightness(1.05) !important; }
+button:active,
+input.formbutton:active{ transform: translateY(1px) !important; }
+input.disabled{ background:#e5e7eb !important; color:#94a3b8 !important; }
+
+/* Campos */
+.f-input, .f-text, .f-textarea, .f-select,
+input.date, input.number, select{
+  border:1px solid var(--line) !important;
+  border-radius:8px !important;
+  padding:.5rem .6rem !important;
+  font-size: 13px !important;
+  color: var(--text) !important;
+  background:#fff !important;
+}
+.f-textarea{ min-height:120px !important; }
+
+/* Paginador */
+.paginator{
+  text-align:center !important;
+ /* padding: 12px 0 !important;*/
+}
+.paginator li{ margin:0 2px !important; }
+.paginator li a, .paginator li.current{
+  display:inline-block !important;
+  border:1px solid var(--line) !important;
+  background:#fff !important;
+  color:var(--text-weak) !important;
+  padding:.35rem .6rem !important;
+  border-radius:8px !important;
+  text-decoration:none !important;
+}
+.paginator li.current{
+  background: var(--primary) !important;
+  border-color: var(--primary-600) !important;
+  color:#fff !important;
+}
+
+/* ===================== Tabela de Cupons (lista) ============================== */
+/* Corrige estilos herdados que pintavam todas as TRs */
+.coupons-table tr{
+  background: transparent !important;
+  color: inherit !important;
+}
+
+/* Container */
+.coupons-table{
+  width:100% !important;
+  margin: 12px 0 24px !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  background: var(--surface) !important;
+  box-shadow: var(--shadow) !important;
+  border: 1px solid var(--line) !important;
+  border-radius: var(--radius) !important;
+  overflow: hidden !important;
+}
+
+/* Cabeçalho */
+.coupons-table thead th{
+  position: sticky; top: 0; z-index: 1;
+  background: var(--surface-2) !important;
+  color: var(--text) !important;
+  text-align: left !important;
+  font-weight: 600 !important;
+  letter-spacing: .01em;
+  border-bottom:1px solid var(--line) !important;
+  padding: .7rem .75rem !important;
+}
+
+/* Células */
+.coupons-table td{
+  vertical-align: middle !important;
+  color: var(--text-weak) !important;
+  padding: .6rem .75rem !important;
+  border-bottom: 1px solid var(--line) !important;
+  background:#fff !important;
+}
+
+/* Zebra + hover */
+.coupons-table tbody tr:nth-child(even) td{ background:#fafafa !important; }
+.coupons-table tbody tr:hover td{ background:#eff6ff !important; }
+
+/* Coluna “Ações” — ícones mais separados */
+.coupons-table td .op,
+.coupons-table td a img{
+  margin-left: 6px !important;
+}
+
+/* Badges (Ativo/Sim/Não, % de desconto) */
+.badge{
+  display:inline-block; font-size:.75rem; font-weight:600;
+  padding:.2rem .45rem; border-radius:999px; line-height:1;
+}
+.badge--yes{ background:#e8f7ee; color:var(--success); border:1px solid #bfe7cb; }
+.badge--no{  background:#fdecec; color:var(--danger); border:1px solid #f5c2c2; }
+.badge--perc{ background:#eef2ff; color:#3730a3; border:1px solid #c7d2fe; }
+
+/* Responsividade da tabela (esconde colunas menos críticas em telas menores)
+   Ordem esperada: [☑] ID | Nome | Código | Link | % | Loja | Categoria | Visualiz. | Redir. | Ativo | Expira | Ações
+   Há um checkbox antes de ID; ajuste os nth-child conforme seu markup real. */
+ 
+@media (max-width: 880px){ 
+  .paginator{ font-size: 13px !important; }
+}
+
+/* Linha selecionada (quando marcar checkbox) */
+.coupons-table tr.is-selected td{
+  background:#dbeafe !important;
+}
+
+/* ==================== Navegação (barra azul) ================================= */
+#hd .nav a{
+  background: transparent !important;
+  color: #e5efff !important;
+  border-radius: 8px !important;
+}
+#hd .nav li.current a,
+#hd .nav a:hover{
+  background: var(--primary) !important;
+  color:#fff !important;
+}
+
+/* ==================== Wrapped Select (compatível com seu CSS) ================ */
+.cjt-wrapped-select{
+  width: 100% !important;
+}
+.cjt-wrapped-select > .cjt-wrapped-select-skin{
+  border-color: var(--line) !important;
+  border-radius: 8px !important;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.03) !important;
+  padding: 6px 36px 6px 10px !important;
+}
+.cjt-wrapped-select-icon{ opacity:.7; }
+
+/* ==================== Time Selector (compatível) ============================= */
+.cpanel-time-selector-container{
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif !important;
+  color: var(--text-weak) !important;
+}
+.cpanel-time-selector-hours,
+.cpanel-time-selector-minutes{
+  height: 22px !important;
+  border-color: var(--line) !important;
+  border-radius: 6px !important;
+}
+
+/* ==================== Tabelas diversas (mail/relatórios) ==================== */
+.deliveryreport table{
+  width: 100% !important;
+  border:1px solid var(--line) !important;
+}
+.deliveryreport table th{
+  background: var(--surface-2) !important;
+  color: var(--text) !important;
+  text-shadow:none !important;
+}
+
+/* Densidade opcional: adicione <body class="is-compact"> para compactar */
+body.is-compact .coupons-table td{ padding:.45rem .55rem !important; }
+body.is-compact .coupons-table thead th{ padding:.55rem .6rem !important; }
+
+/* Modo escuro opcional: <body data-theme="dark"> */
+@media (prefers-color-scheme: dark){
+  body[data-theme="dark"]{
+    --bg:#0b1220; --surface:#0f172a; --surface-2:#0b1324;
+    --line:#1f2a44; --text:#e5e7eb; --text-weak:#cbd5e1;
+  }
+  body[data-theme="dark"] .coupons-table,
+  body[data-theme="dark"] .option_box,
+  body[data-theme="dark"] .table-top,
+  body[data-theme="dark"] .form-contain{
+    box-shadow:none !important;
+  }
+}
+
+
+/* inputs da linha de filtros (thead) */
+.coupons-table thead input[type="text"],
+.coupons-table thead input[type="search"],
+.coupons-table thead input[type="number"],
+.coupons-table thead select {
+  height: 34px !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 8px !important;
+  padding: .45rem .55rem !important;
+  background: #fff !important;
+  color: var(--text) !important;
+}
+
+/* labels que estavam brancas */
+.coupons-table thead label,
+.table-top label,
+label {
+  color: var(--muted) !important;
+  font-weight: 500 !important;
+}
+
+/* regra genérica reforçada para qualquer botão/link de ação */
+button,
+input[type=button],
+input[type=submit],
+a.button, a.btn, .button, .btn {
+  background: var(--primary) !important;
+  border: 1px solid var(--primary-600) !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+  padding: .55rem .9rem !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+}
+
+/* reforço específico pelos textos dos botões clássicos */
+input[type=button][value*="Importar"],
+input[type=button][value*="Adicionar"],
+input[type=submit][value*="Buscar"],
+input[type=button][value*="Limpar"],
+input[type=submit][value*="Aplicar"] {
+  background: var(--primary) !important;
+  border-color: var(--primary-600) !important;
+  color: #fff !important;
+}
+
+/* amplia selects de toolbars/filtros que listam muitas opções */
+#content select,
+.table-top select,
+.coupons-table thead select {
+  max-width: 100% !important;
+  min-width: 220px !important;   /* ajuste fino */
+}
+
+/* skin do wrapped-select sempre acompanhando a largura */
+ 
+
+/* impede quebra de linha e centraliza verticalmente os ícones */
+.coupons-table td:last-child {
+  white-space: nowrap !important;
+}
+.coupons-table td:last-child a,
+.coupons-table td:last-child img {
+  vertical-align: middle !important;
+  line-height: 1 !important;
+}
+
+.coupons-table tbody tr:hover td { background:#ffd4b0  !important; }
+.coupons-table tbody tr.is-selected td { background:#dbeafe !important; }
+
+
+/* ===== Ajustes finos para a página de Cupons (HTML enviado) ================= */
+
+/* 0) Base do container da página */
+#coupons .option_box{
+  background: var(--surface) !important;
+  border: 1px solid var(--line) !important;
+  border-radius: var(--radius) !important;
+  box-shadow: var(--shadow) !important;
+}
+
+ 
+/* Links “Adicionar Cupom” e “Importar Cupom” viram botões */
+#content ul#log_tools li a{
+  background: var(--primary) !important;
+  border: 1px solid var(--primary-600) !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+  padding: .5rem .8rem !important;
+  display: inline-block !important;
+  text-decoration: none !important;
+  line-height: 1 !important;
+}
+#content ul#log_tools{ margin: 0 6px !important; display: inline-block !important; }
+
+/* Ações em lote (select + botão “Aplicar”) */
+.operacaoofertas select,
+.catassociar select{
+  height: 36px !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 8px !important;
+  padding: .4rem .55rem !important;
+  background: #fff !important;
+  color: var(--text) !important;
+  min-width: 260px !important;
+}
+.operacaoofertas button,
+.catassociar button{
+  background: var(--primary) !important;
+  border: 1px solid var(--primary-600) !important;
+  color:#fff !important;
+  border-radius: 8px !important;
+  padding: .5rem .8rem !important;
+  width: auto !important; /* ignora width inline estreita */
+}
+
+/* 2) Paginação + selects avulsos (nº por página / mostrar todos os cupons) */
+.paginacaotop{ padding: 8px 0 !important; }
+#numeroderegistros,
+#tipocadastro{
+  height: 36px !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 8px !important;
+  padding: .4rem .55rem !important;
+  background: #fff !important;
+  color: var(--text) !important;
+  min-width: 220px !important;
+}
+/* corrige o DIV com margem negativa do seu HTML */
+.option_box > div[style*="margin-top: -25px"]{
+  margin-top: 8px !important;
+  float: right !important;
+}
+
+/* highlight ao focar qualquer select (nativo ou wrapped) */
+select:focus{
+  background: #f8fbff !important;
+  box-shadow: 0 0 0 3px rgba(37,121,235,.12) !important;
+  outline: none !important;
+}
+
+/* 3) Tabela de cupons — primeira linha é filtro (não usa <thead>) */
+.coupons-table{
+   text-transform: lowercase;
+  width: 100% !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  background: var(--surface) !important;
+  border: 1px solid var(--line) !important;
+  border-radius: var(--radius) !important;
+  box-shadow: var(--shadow) !important;
+  overflow: hidden !important;
+}
+
+/* Cabeçalho/filtros (1º TR) */
+.coupons-table tr:first-child th{
+  position: sticky; top: 0; z-index: 1;
+  background: #88c3ff !important;
+  color: #011251   !important;
+  text-align: left !important;
+  font-weight: 100  !important;
+  border-bottom: 1px solid var(--line) !important;
+  padding: .65rem .75rem !important;
+}
+.coupons-table tr:first-child th input[type="text"],
+.coupons-table tr:first-child th input[type="number"],
+.coupons-table tr:first-child th input[type="search"],
+.coupons-table tr:first-child th select{
+  height: 32px !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 8px !important;
+  padding: 0px .5rem !important;
+  background: #fff !important;
+  color: var(--text) !important;
+  font-size: .92rem !important;
+}
+
+/* Botões “Buscar” e “Limpar” (dentro do TH final) */
+.coupons-table tr:first-child th button{
+  background: var(--primary) !important;
+  border: 1px solid var(--primary-600) !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+  padding: .45rem .75rem !important;
+  width: auto !important;           /* ignora width:60px inline */
+  margin-left: 6px !important;
+}
+
+/* Linhas de dados */
+.coupons-table tr:nth-child(n+2) td{
+  background: #cfe3f3  !important;
+  color: var(--text-weak) !important;
+  padding: .6rem .75rem !important;
+  border-bottom: 1px solid var(--line) !important;
+}
+.coupons-table tr:nth-child(even) td{ background:#fafafa !important; }
+.coupons-table tr:hover td{ background:#eff6ff !important; }
+
+/* 4) Coluna Ações — ícones alinhados e sem quebrar linha */
+.coupons-table td.op{ white-space: nowrap !important; }
+.coupons-table td.op > div{
+  display: inline-block !important;
+  float: none !important;
+  vertical-align: middle !important;
+  margin-right: 6px !important;
+}
+.coupons-table td.op img{ vertical-align: middle !important; line-height: 1 !important; }
+
+/* 5) Badges “Sim/Não/%” (pode aplicar via HTML ou JS depois) */
+.badge{
+  display:inline-block; font-size:.75rem; font-weight:600;
+  padding:.2rem .45rem; border-radius:999px; line-height:1;
+}
+.badge--yes{ background:#e8f7ee; color:var(--success); border:1px solid #bfe7cb; }
+.badge--no{  background:#fdecec; color:var(--danger);  border:1px solid #f5c2c2; }
+.badge--perc{ background:#eef2ff; color:#3730a3;  border:1px solid #c7d2fe; }
+
+/* ===== Faixa superior (título + selects/botões) com background suave ===== */
+#coupons .option_box .top-heading{
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 10px;
+  padding: 12px 14px;
+  /* se quiser que a faixa encoste nas bordas internas do card */
+  margin: -4px -4px 12px -4px;
+  background: #daebf6;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 1px 2px rgba(2,6,23,.06), inset 0 1px 0 rgba(255,255,255,.6);
+}
+
+/* título “Cupons” alinhado */
+#coupons .top-heading .left_float h4{ margin: 0; color: #000 !important;}
+
+/* agrupa os botões/combos à direita com espaçamento bonito */
+#coupons .top-heading > div[style*="padding"]{
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px;
+}
+
+/* leve “lift” nos controles sobre o fundo suave */
+#coupons .top-heading select,
+#coupons .top-heading button,
+#coupons .top-heading a{
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.9), 0 1px 2px rgba(2,6,23,.08);
+}
+
+/* se preferir SEM “sangrar” até as bordas, remova o margin acima
+#coupons .option_box .top-heading{ margin: 0 0 12px 0; }
+*/
+
+/* Dark mode opcional (se usar data-theme="dark") */
+body[data-theme="dark"] #coupons .option_box .top-heading{
+  background: linear-gradient(180deg, rgba(37,121,235,.14), rgba(37,121,235,.08));
+  border-color: #1f2a44;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.05);
+}
+
+/* ===== Barra de paginação + controles (sem inline styles) ================= */
+
+/* coloca os 3 blocos na mesma linha */
+.option_box .paginacaotop,
+.option_box > div:has(#numeroderegistros),
+.option_box > div:has(#tipocadastro){
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin: 6px 12px 10px 0 !important;
+  padding: 0 !important;
+  vertical-align: middle !important;
+}
+
+/* deixa o texto "Número de registros por página:" ao lado do select,
+   sem quebra maluca */
+.option_box > div:has(#numeroderegistros){
+  white-space: nowrap !important;
+}
+
+/* encosta o "Mostrar todos os cupons" à direita para ocupar o espaço morto */
+.option_box > div:has(#tipocadastro){
+  float: right !important;
+}
+
+/* limpa a linha antes da tabela para nada “subir” */
+.option_box::after{ content:""; display:block; clear:both; }
+
+/* altura e largura consistentes dos selects */
+#numeroderegistros,
+#tipocadastro{
+  height: 36px !important;
+  min-width: 220px !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 8px !important;
+  padding: .4rem .55rem !important;
+  background: #fff !important;
+  color: var(--text) !important;
+}
+
+/* responsivo: quando faltar espaço, quebra em 2 linhas com margem curta */
+@media (max-width: 1100px){
+  .option_box > div:has(#tipocadastro){
+    float: none !important;
+  }
+}
+
+
+
+
+/* ===== Vipmin Menu — Dark + Stable Dropdown ===== */
+
+/* Paleta mais imponente */
+:root{
+  --menu-bg: #0b1220;
+  --menu-bg-2: #0a1020;
+  --menu-border: #0f1a2f;
+  --menu-text: #e8efff;
+  --menu-text-weak:#c8d3f0;
+  --menu-hover: rgba(37, 121, 235, .18);
+  --menu-accent:#2579eb;
+  --radius: 12px;
+}
+
+/* Barra principal */
+#menu{
+  background: linear-gradient(180deg, #214180, var(--menu-bg-2)) !important;
+  border: 1px solid var(--menu-border) !important;
+  border-radius: var(--radius) !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.06) !important;
+  padding: 6px !important;
+  display: flex !important; gap: 6px !important; flex-wrap: wrap !important;
+}
+
+/* Primeiro nível */
+#menu > li{ position: relative !important; }
+#menu > li > a{
+  color: var(--menu-text) !important;
+  background: transparent !important;
+  border-radius: 10px !important;
+  padding: .65rem .9rem !important;
+  font: 600 14px/1.1 "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif !important;
+  text-shadow: none !important; text-transform: none !important;
+  transition: background .12s ease, color .12s ease, box-shadow .12s ease !important;
+}
+#menu > li > a:hover,
+#menu > li.is-active > a,
+#menu > li.is-open > a{
+  background: var(--menu-hover) !important;
+  color: #fff !important;
+  box-shadow: 0 1px 2px rgba(2,6,23,.25) !important;
+}
+
+/* Submenu — sem “gap” (não some ao descer o mouse) */
+#menu > li > ul{
+  position: absolute !important;
+  left: 0 !important; top: 100% !important;        /* encosta no item pai */
+  margin-top: 10px !important;                      /* espaço visual */
+  min-width: 260px !important;
+  background: #0f172a !important;
+  border: 1px solid #15223a !important;
+  border-radius: 12px !important;
+  box-shadow: 0 16px 40px rgba(0,0,0,.45) !important;
+  padding: 8px !important;
+  opacity: 0; pointer-events: none; transform: translateY(4px);
+  transition: opacity .15s ease, transform .15s ease !important;
+  z-index: 9999 !important;
+}
+
+/* “Ponte” anti-gap: mantém o :hover do <li> ao mover o mouse para o submenu */
+#menu > li::after{
+  content:""; position:absolute; left:0; right:0; top:100%;
+  height: 12px; /* ponte do tamanho do margin-top do submenu */
+}
+
+/* Mostrar submenu por hover OU quando “travado” por clique (classe .is-open) */
+#menu li:hover > ul,
+#menu li:focus-within > ul,
+#menu li.is-open > ul{
+  opacity: 1; pointer-events: auto; transform: translateY(0);
+}
+
+/* Itens do submenu */
+#menu ul li{ float:none !important; }
+#menu ul a{
+	FONT-SIZE: 15PX;
+  display:flex !important; align-items:center !important;
+  width:100% !important; white-space:normal !important;
+  padding:.55rem .7rem !important; border-radius:8px !important;
+  color: var(--menu-text-weak) !important; background: transparent !important;
+  font-weight: 500 !important; text-transform:none !important; text-shadow:none !important;
+}
+#menu ul a:hover, #menu ul a:focus{
+  background: rgba(37,121,235,.14) !important; color:#fff !important; outline: none !important;
+}
+
+/* Flyout (submenu do submenu) alinhado à direita */
+#menu ul ul{ top:0 !important; left:100% !important; margin-left:10px !important; }
+
+/* Indicador de link externo (opcional) */
+#menu a[target="_blank"]::after{ content:"↗"; margin-left:.45rem; font-size:.85em; opacity:.7; }
+
+/* Scroll horizontal em telas menores */
+@media (max-width: 1100px){
+  #menu{ overflow-x:auto; flex-wrap:nowrap !important; }
+  #menu > li{ flex:0 0 auto; }
+}
+
+/* Dark refinado para contraste perfeito dentro do dropdown */
+body[data-theme="dark"] #menu > li > ul{ background:#0b1324 !important; border-color:#15223a !important; }
+
+
+#hdw, #hd { background-image: none !important; }
+ 
+
+/* === HEADER – AURORA === */
+#hdw{
+  position: relative;
+  min-height: 148px; /* ajuste se quiser mais/menos altura */
+  color:#e8efff;
+
+  /* camadas: vinheta, 2 auroras e gradiente base */
+  background:
+    radial-gradient(1200px 280px at 50% -140px, rgba(255,255,255,.10), transparent 60%) no-repeat,
+    radial-gradient(900px 220px at 25% 15%, rgba(37,121,235,.22), transparent 60%) no-repeat,
+    radial-gradient(900px 220px at 75% 20%, rgba(0,198,255,.18), transparent 60%) no-repeat,
+    linear-gradient(180deg, #0b1d34 0%, #08172b 55%, #071326 100%) !important;
+
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.05);
+}
+
+
+.logovi{
+	margin-top: 10px;
+    max-width: 330px;
+    max-height: 61px;
+    margin-left: -42px;
+}
+
+/* ====== Sistema > Informações Básicas – UI Moderna ======================= */
+
+/* Caixa padrão */
+#partner .option_box{
+  background: var(--surface) !important;
+  border: 1px solid var(--line) !important;
+  border-radius: var(--radius) !important;
+  box-shadow: var(--shadow) !important;
+}
+
+/* Cabeçalho da caixa + botão Salvar */
+#partner .top-heading{
+  display:flex; align-items:center; justify-content:space-between;
+  flex-direction: column;
+  gap:12px; padding:12px 14px;
+  background: #daebf6;
+  border-bottom: 1px solid var(--line);
+  border-radius: 12px 12px 0 0;
+}
+#partner .top-heading .left_float h4{ margin:0; font-weight:700; color:var(--text) !important; }
+
+/* Botão Salvar com spinner */
+#partner .top-heading .the-button{ position: sticky; top: 8px; align-self:flex-start; }
+#partner .input-btn{
+  background: var(--primary) !important;
+  border: 1px solid var(--primary-600) !important;
+  color:#fff !important; border-radius:10px !important;
+  padding:1.6rem 3rem !important; cursor:pointer !important;
+  display:inline-flex !important; align-items:center !important; gap:8px !important;
+  box-shadow: 0 1px 2px rgba(2,6,23,.08);
+}
+#partner #spinner-top{ display:none !important; width:auto !important; }
+#partner .input-btn.is-loading #spinner-top{ display:block !important; }
+#partner .input-btn.is-loading #spinner-text{ opacity:.85; }
+
+/* Conteúdo da caixa */
+#partner #container_box{ padding: 12px 14px; }
+
+/* GRID do formulário: duas colunas responsivas */
+#partner .form-contain.group{
+  display:grid; grid-template-columns: 1fr 1fr; gap:16px 24px; align-items:start;
+}
+#partner .form-contain.group .starts,
+#partner .form-contain.group .ends{ min-width:0; }
+@media (max-width: 1100px){
+  #partner .form-contain.group{ grid-template-columns: 1fr; }
+}
+
+/* Títulos e dicas */
+#partner .report-head{
+  margin:12px 0 6px; font-weight:600; color:var(--text);
+}
+#partner .cpanel-date-hint{
+  color: var(--muted); font-weight:400; margin-left:6px; 
+}
+
+/* Inputs/textarea/file uniformes */
+#partner input.format_input.ckeditor[type="text"],
+#partner input[type="text"].format_input,
+#partner input[type="file"],
+#partner textarea.format_input,
+#partner .text_area textarea,
+#partner input.ckeditor[type="text"]{
+  width:100%; box-sizing:border-box;
+  background:#fff; color:var(--text);
+  border:1px solid var(--line); border-radius:8px;
+  padding:.55rem .7rem; font-size:.95rem;
+}
+#partner .text_area textarea{ min-height:140px; resize:vertical; }
+
+/* Secções secundárias */
+#partner h2{ font-size:1rem; margin:16px 0 10px; color:var(--text-weak); }
+#partner .infotxt{
+  margin-top:8px; background:#f7fbff; color:#0f172a;
+  border:1px solid #dbeafe; border-radius:8px; padding:.6rem .75rem;
+}
+
+/* Imagens em prévia (ex.: banner whatsapp) */
+#partner img{ max-width:100%; height:auto; }
+
+/* Abas do topo (dashboard) */
+#partner .dashboard ul{
+  list-style:none; margin:0 0 12px 0; padding:0;
+  display:flex; gap:6px; flex-wrap:wrap;
+}
+#partner .dashboard ul li a{
+  display:block; padding:.45rem .8rem; border-radius:999px;
+  background:#fff; border:1px solid var(--line); color:var(--text-weak); text-decoration:none;
+}
+#partner .dashboard ul li.current a{
+  background: var(--primary); color:#fff; border-color: var(--primary-600);
+}
+
+/* Textos de ajuda (ícone azul) */
+#partner img.tTip{ width:16px; vertical-align:middle; opacity:.8; }
+
+/* Caixas “Lateral” / textos longos */
+#partner .option_box .option_contents{ padding-top: 2px; }
+
+/* === Informações Básicas – eliminar espaços vazios ==================== */
+
+/* 1) Some com o sidebar dessa tela (ele está vazio) e libere a largura total */
+#partner ~ #sidebar { display: none !important; }
+#partner #content.mainwide { margin-right: 0 !important; }  /* algumas skins criam margem p/ sidebar */
+
+/* 2) Garanta que o container use 100% */
+#partner #container_box,
+#partner #option_contents { width: 97% !important; }
+
+/* 3) Neutralize legado de floats/larguras nas colunas */
+#partner .form-contain.group .starts,
+#partner .form-contain.group .ends{
+  float: none !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 0 !important;
+}
+
+/* 4) Grid de 2 colunas com espaço controlado */
+#partner .form-contain.group{
+  display: grid !important;
+  grid-template-columns: minmax(0,1fr) minmax(0,1fr) !important;
+  gap: 16px 24px !important; /* linha x coluna */
+  align-items: start !important;
+}
+
+/* 5) Inputs 100% da coluna (só reforço) */
+#partner input[type="text"].format_input,
+#partner textarea.format_input,
+#partner .text_area textarea,
+#partner input[type="file"].format_input{
+  width: 94% !important;
+  box-sizing: border-box !important;
+}
+
+/* 6) Responsivo: em telas menores, quebra pra 1 coluna */
+@media (max-width: 1100px){
+  #partner .form-contain.group{
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ===== Botão SALVAR – maior e à direita ===== */
+
+/* mantém o header como flex e empurra o botão para a direita */
+#partner .top-heading{ position: relative; }
+#partner .top-heading .the-button{
+  margin-left: auto !important;
+  flex: 0 0 auto !important;
+}
+
+/* estilo grande e destacado */
+#run-button{
+  font-weight: 800 !important;
+  font-size: 18px !important;
+  padding: .9rem 1.4rem !important;
+  min-width: 160px !important;
+  border-radius: 999px !important;
+
+  background: var(--primary) !important;
+  border: 1px solid var(--primary-600) !important;
+  color: #fff !important;
+
+  box-shadow:
+    0 12px 28px rgba(37,121,235,.30),
+    0 4px 10px rgba(2,6,23,.18) !important;
+  transition: transform .08s ease, filter .15s ease, box-shadow .15s ease !important;
+}
+#run-button:hover{ transform: translateY(-1px); filter: brightness(1.05); }
+#run-button:active{ transform: translateY(0); }
+
+/* texto interno com um pouquinho mais de “peso” visual */
+#spinner-text{ font-size: 17px; letter-spacing:.2px; }
+
+/* responsivo: reduz um pouco em telas menores */
+@media (max-width: 1100px){
+  #run-button{ font-size: 16px !important; padding: .75rem 1.1rem !important; min-width: 140px !important; }
+}
+`
+/* ===== Corrigir legado .the-button (mail.css) e destacar o SALVAR ===== */
+
+/* 1) Neutraliza o legado do container do botão nesta tela */
+#partner .top-heading{ display:flex; align-items:center; gap:12px; }
+#partner .top-heading .the-button{
+  /* zera o que vem do mail.css */
+  float: none !important;
+  width: auto !important;
+  padding: 0 !important;
+  padding-bottom: 0 !important;
+  overflow: visible !important;
+  text-align: initial !important;
+  vertical-align: baseline !important;
+
+  /* posiciona à direita e permite crescer */
+  margin-left: auto !important;
+  flex: 0 0 auto !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* 2) Estilo do botão (grande e destacado) */
+#run-button{
+     font-weight: 400 !important;
+    font-size: 12px !important;
+  padding: .9rem 1.4rem !important;
+  min-width: 160px !important;
+  border-radius: 999px !important;
+
+  background: var(--primary) !important;
+  border: 1px solid var(--primary-600) !important;
+  color: #fff !important;
+
+  box-shadow:
+    0 12px 28px rgba(37,121,235,.30),
+    0 4px 10px rgba(2,6,23,.18) !important;
+  transition: transform .08s ease, filter .15s ease, box-shadow .15s ease !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+#run-button:hover{ transform: translateY(-1px); filter: brightness(1.05); }
+#run-button:active{ transform: translateY(0); }
+
+/* 3) Spinner interno sem largura fixa */
+#spinner-top{ display:none !important; width:auto !important; }
+#run-button.is-loading #spinner-top{ display:block !important; }
+
+
+/* ===== Textareas em largura total (span das 2 colunas) ===== */
+
+/* qualquer filho direto do grid que contenha <textarea> vira "full-row" */
+#partner .form-contain.group > *:has(textarea){
+ /* grid-column: 1 / -1 !important;*/ 
+}
+
+/* o próprio textarea ocupa 100% e ganha altura confortável */
+#partner .form-contain.group textarea{
+  width: 100% !important;
+  min-height: 260px !important;    /* ajuste se quiser mais/menos */
+  resize: vertical !important;
+  box-sizing: border-box !important;
+}
+
+/* visual bom para código/markup */
+#partner .form-contain.group textarea{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  line-height: 1.35;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: .6rem .75rem;
+  color: var(--text);
+}
+
+/* === Textareas FULL-WIDTH nessas caixas ================================== */
+
+/* 1) neutraliza floats do título dessas caixas */
+#partner .option_box #container_box .left_float{ float:none !important; }
+#partner .option_box #container_box h4{
+  margin:8px 13px 6px !important;
+  padding:0 !important;
+  color:var(--text-weak) !important;
+  font-weight:700 !important;
+}
+
+/* 2) o grid interno continua existindo, mas o bloco .text_area ocupa a LINHA toda */
+#partner .option_box .option_contents .form-contain.group{
+  display:grid !important;
+  grid-template-columns: 1fr 1fr !important;   /* mantém o padrão do resto da página */
+  gap: 12px 16px !important;
+}
+
+#partner .option_box .option_contents .form-contain.group > .text_area{
+  grid-column: 1 / -1 !important;             /* SPAN nas 2 colunas */
+  width: 100% !important;
+}
+
+/* 3) textarea confortável, 100% de largura */
+#partner .option_box .option_contents .form-contain.group .text_area textarea{
+  width: 100% !important;
+  min-height: 320px !important;               /* ajuste se quiser maior/menor */
+  resize: vertical !important;
+  box-sizing: border-box !important;
+
+  background:#fff !important;
+  border:1px solid var(--line) !important;
+  border-radius:8px !important;
+  padding:.65rem .8rem !important;
+  color:var(--text) !important;
+
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace !important;
+  line-height:1.38 !important;
+}
+
+/* 4) em telas menores, vira 1 coluna por segurança */
+@media (max-width: 1100px){
+  #partner .option_box .option_contents .form-contain.group{
+    grid-template-columns: 1fr !important;
+  }
+}
+/* ===== Textareas "Matrix" (só nas caixas de metatags/js/css) ===== */
+#partner .option_box .option_contents .form-contain.group .text_area textarea{
+  background: #000 !important;
+  color: #39FF14 !important;          /* verde neon */
+  border: 1px solid #0f7a16 !important;
+  border-radius: 8px !important;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace !important;
+  line-height: 1.4 !important;
+  padding: .65rem .8rem !important;
+  caret-color: #39FF14 !important;    /* cursor verde */
+  box-shadow: inset 0 0 0 1px rgba(57,255,20,.15), 0 0 0 0 rgba(57,255,20,0) !important;
+}
+
+/* brilho ao focar (aura verde) */
+#partner .option_box .option_contents .form-contain.group .text_area textarea:focus{
+  outline: none !important;
+  border-color: #25d43f !important;
+  box-shadow:
+    0 0 0 3px rgba(57,255,20,.18),
+    inset 0 0 0 1px rgba(57,255,20,.25) !important;
+}
+
+/* seleção de texto em verde translúcido */
+#partner .option_box .option_contents .form-contain.group .text_area textarea::selection{
+  background: rgba(57,255,20,.25); color: #eaffea;
+}
+
+/* scrollbars (webkit) em verde discreto */
+#partner .option_box .option_contents .form-contain.group .text_area textarea::-webkit-scrollbar{
+  height: 10px; width: 10px;
+}
+#partner .option_box .option_contents .form-contain.group .text_area textarea::-webkit-scrollbar-thumb{
+  background: rgba(57,255,20,.35); border-radius: 8px;
+}
+#partner .option_box .option_contents .form-contain.group .text_area textarea::-webkit-scrollbar-track{
+  background: #0a0a0a;
+}
+/* tipografia global */
+html, body{
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
+  font-feature-settings: "liga","kern";
+  font-kerning: normal;
+}
+
+/* títulos com fonte de impacto */
+#partner .top-heading h4,
+#partner h2{
+  font-family: "Plus Jakarta Sans", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
+  letter-spacing: .2px;
+}
+
+/* dá um respiro sob o cabeçalho */
+#partner .top-heading{ margin-bottom: 12px; }
+
+
+/* grid de 2 colunas com variável de gap */
+#partner .form-contain.group{
+  position: relative !important;
+  --col-gap: 40px;                 /* ajuste aqui: 32–56px fica ótimo */
+  gap: 16px var(--col-gap) !important;
+}
+
+/* divisor vertical central */
+@media (min-width: 1100px){
+  #partner .form-contain.group::before{
+    content: "";
+    position: absolute;
+    top: -6px; bottom: -6px;
+    left: calc(50% - (var(--col-gap) / 2));  /* no meio das colunas */
+    width: 1px;
+    background: var(--line);
+    opacity: .6;
+    pointer-events: none;
+    border-radius: 1px;
+  }
+}
+
+/* em telas menores continua 1 coluna (sem divisor) */
+@media (max-width: 1099.98px){
+  #partner .form-contain.group{ grid-template-columns: 1fr !important; }
+}
+
+/* gap entre colunas (mantém sua var) */
+#partner .form-contain.group{
+  --col-gap: 40px;
+  gap: 16px var(--col-gap) !important;
+}
+
+/* divisor centralizado no MEIO do gap */
+@media (min-width: 1100px){
+  #partner .form-contain.group::before{
+    content:"";
+    position:absolute;
+    top:-6px; bottom:-6px;
+    left:50%;                     /* antes estava: 50% - (gap/2) */
+    transform: translateX(-0.5px);/* centraliza o traço de 1px */
+    width:1px;
+    background: var(--line);
+    opacity:.6; pointer-events:none; border-radius:1px;
+  }
+}
+
+/* respiro para os campos não “beijarem” o divisor */
+#partner .form-contain.group .starts{
+  padding-inline-end: 16px;  /* fallback abaixo */
+  padding-right: 16px;
+}
+#partner .form-contain.group .ends{
+  padding-inline-start: 16px;
+  padding-left: 16px;
+}
+
+/* Deixe a tabela calcular larguras pelo conteúdo */
+#orders-list { table-layout: auto; }
+
+/* A coluna dos botões fica sem quebra e ajustada ao conteúdo */
+#orders-list th:last-child,
+#orders-list td.op {
+  white-space: nowrap;
+  width: 1% !important;      /* força a coluna a usar só o espaço necessário */
+  text-align: right;
+}
+
+/* Garanta que os dois botões fiquem lado a lado */
+#orders-list th:last-child button {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;           /* espaçamento entre os botões */
+  /* opcional: tornar a largura flexível em vez de fixa */
+  /* width: auto !important; padding: 6px 12px; */
+}
+
+/* Permite que as outras colunas encolham quando precisar */
+#orders-list th[width]:not(:last-child) {
+  width: auto !important;
+}
+
+
+/* ====== GRID RESPONSIVO DA LISTA DE CUPONS ====== */
+:root{
+  /* Ajuste as larguras das colunas para desktop */
+  --cols: 90px 2fr 1.4fr 90px 110px 1.3fr 1.3fr 90px 90px 90px 120px 130px;
+}
+.coupons-grid{ display:grid; gap:10px; }
+
+/* Linha de filtros (substitui o <thead> com inputs) */
+.coupons-filters{
+  display:grid; grid-template-columns: var(--cols);
+  gap:10px; align-items:center;
+  background:#fff; border-radius:12px; padding:10px 12px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.04), 0 8px 20px rgba(0,0,0,.06);
+  position: sticky; top: 64px; z-index: 5;   /* fica “grudada” ao rolar */
+}
+.coupons-filters .filters-actions{ display:flex; gap:8px; justify-content:flex-end; }
+.coupons-filters input, .coupons-filters select{ width:100%; }
+
+/* Cabeçalho das colunas (opcional em desktop; some no mobile) */
+.grid-head{
+  display:grid; grid-template-columns: var(--cols);
+  gap:10px; padding:6px 12px; font-weight:600; color:#334155;
+}
+
+/* Cada linha/”card” */
+.coupon-row{
+  display:grid; grid-template-columns: var(--cols);
+  gap:10px; align-items:center;
+  background:#fff; border-radius:12px; padding:10px 12px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.04), 0 8px 20px rgba(0,0,0,.06);
+}
+.coupon-row .actions{ display:flex; gap:8px; justify-content:flex-end; flex-wrap:wrap; }
+.coupon-row a{ color:#0ea5e9; text-decoration:none; }
+.coupon-row a:hover{ text-decoration:underline; }
+
+/* Garante que “Buscar/Limpar” e os botões da última coluna nunca quebrem linha */
+.coupons-filters .filters-actions,
+.coupon-row .actions{ white-space:nowrap; }
+
+/* ====== MOBILE / TABLET ====== */
+@media (max-width: 1100px){
+  .grid-head{ display:none; }
+  .coupons-filters{
+    grid-template-columns: 1fr 1fr;   /* filtros passam a 2 colunas */
+  }
+  .coupons-filters .filters-actions{
+    grid-column: 1 / -1; justify-content:flex-end;
+  }
+  .coupon-row{
+    grid-template-columns: 1fr;       /* vira “card” */
+  }
+  .coupon-row .cell{
+    display:grid; grid-template-columns: 42% 1fr;
+    gap:8px; padding:2px 0;
+  }
+  .coupon-row .cell::before{
+    content: attr(data-label);
+    font-weight:600; color:#64748b;
+  }
+  .coupon-row .actions{ justify-content:flex-start; }
+}
+
+/* Pequenos retoques visuais */
+.badge-yes{ color:#16a34a; font-weight:600; }
+.badge-no { color:#ef4444; font-weight:600; }
+
+/* Checkbox + ID estreito e sem quebra */
+.cell-id{ white-space:nowrap; }
+
+/* === Ajustes de responsividade dos FILTROS === */
+
+/* Desktop grande (>=1280): segue seu grid fixo por --cols (nada muda) */
+
+/* <= 1280px: vira grid de 12 colunas fluidas + esconde rótulos "mudos" */
+@media (max-width:1280px){
+  .coupons-filters{
+    grid-template-columns: repeat(12, 1fr);
+    gap: 12px;
+  }
+  /* some com labels "decorativos" do cabeçalho dentro dos filtros */
+  .coupons-filters .cell[aria-hidden="true"]{ display:none; }
+
+  /* layout das peças */
+  .f-id{ grid-column: span 2; align-self:center; }
+  .f-name{ grid-column: span 10; }
+  .f-code{ grid-column: span 6; }
+  .f-seller{ grid-column: span 6; }
+  .f-category{ grid-column: 1 / -1; }  /* ocupa a linha toda */
+
+  .filters-actions{
+    grid-column: 9 / -1;               /* fixa no canto direito */
+    display:flex; gap:8px; justify-content:flex-end; white-space:nowrap;
+  }
+}
+
+/* <= 900px: dois blocos por linha (3+3 colunas) */
+@media (max-width:900px){
+  .coupons-filters{ grid-template-columns: repeat(6, 1fr); }
+  .f-id{ grid-column: span 1; }
+  .f-name{ grid-column: span 5; }
+  .f-code{ grid-column: span 3; }
+  .f-seller{ grid-column: span 3; }
+  .f-category{ grid-column: 1 / -1; }
+  .filters-actions{ grid-column: 1 / -1; justify-content:flex-end; }
+}
+
+/* <= 600px: 1 por linha, botões continuam lado a lado à direita */
+@media (max-width:600px){
+  .coupons-filters{ grid-template-columns: 1fr; }
+  .f-id, .f-name, .f-code, .f-seller, .f-category{ grid-column: 1 / -1; }
+  .filters-actions{ grid-column: 1 / -1; justify-content:flex-end; }
+}
+
+/* em vez de 1100px */
+@media (max-width:1280px){
+  .grid-head{ display:none; }
+  .coupon-row{ grid-template-columns: 1fr; }
+  .coupon-row .cell{
+    display:grid; grid-template-columns: 42% 1fr; gap:8px; padding:2px 0;
+  }
+  .coupon-row .cell::before{
+    content: attr(data-label);
+    font-weight:600; color:#64748b;
+  }
+  .coupon-row .actions{ justify-content:flex-start; }
+}
+
+/* ===== Filtro responsivo e colado no topo ===== */
+:root{
+  /* ajuste se houver um topo fixo (header) no admin */
+  --admin-header-height: 0px; /* ex.: 56px */
+}
+
+/* aparência base */
+.coupon-filters{
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius:12px;
+  padding:12px 16px;
+  box-shadow:0 2px 6px rgba(0,0,0,.06);
+  margin-bottom:12px;
+
+  /* grid responsivo */
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:12px 16px;
+  align-items:end;
+}
+
+/* sticky só em telas menores (onde você quer o bloco grudado no topo) */
+@media (max-width: 1200px){
+  .coupon-filters{
+    position: sticky;
+    top: var(--admin-header-height);
+    z-index: 1000;
+  }
+  /* evita “pulo” do conteúdo por baixo do filtro */
+  body { scroll-padding-top: calc(var(--admin-header-height) + 120px); }
+}
+
+/* telas médias: 3 colunas */
+@media (min-width: 768px) and (max-width: 1399px){
+  .coupon-filters{ grid-template-columns: 1fr 1fr 1fr; }
+}
+
+/* telas grandes: 4 colunas (nome ocupa 2) */
+@media (min-width: 1400px){
+  .coupon-filters{
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+  /* ajuda a manter visual limpo em desktops */
+  .coupon-filters{ position: static; top:auto; }
+}
+
+/* campos ocupam colunas sem quebrar o layout */
+.coupon-filters > *{ min-width:0; }
+
+/* bloco dos botões SEMPRE lado a lado e alinhados à direita */
+.filter-actions{
+  grid-column: 1 / -1;             /* ocupa a linha inteira do grid */
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  gap:12px;
+}
+
+/* botão consistente em todas as larguras (evita desalinhamento) */
+.coupon-filters button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  height:40px;                     /* altura igual p/ todos */
+  padding:0 16px;
+  line-height:1;                   /* evita “dançar” no baseline */
+  border-radius:10px;
+  border:1px solid #d1d5db;
+  background:#f9fafb;
+  font-weight:600;
+  cursor:pointer;
+  white-space:nowrap;
+}
+.coupon-filters .btn-primary{
+  background:#1d74f5;
+  border-color:#1d74f5;
+  color:#fff;
+}
+
+/* inputs/selects com mesma altura dos botões */
+.coupon-filters input[type="text"],
+.coupon-filters select{
+  height:40px;
+  padding:0 12px;
+  border:1px solid #d1d5db;
+  border-radius:10px;
+  outline:none;
+  width:100%;
+  background:#fff;
+}
+
+/* garante que “Buscar/Limpar” NUNCA empilhem */
+@media (max-width: 420px){
+  .filter-actions button{ min-width:116px; } /* tamanho mínimo */
+}
+
+/* ====== CUPOM: FILTROS ====== */
+.coupon-filters{
+  position: sticky;       /* “grudado” no topo em telas menores */
+  top: 0;
+  z-index: 20;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;        /* quebra quando faltar espaço */
+  gap: 12px 16px;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+/* Tamanho/ajuste de cada campo */
+.coupon-filters .f-id{            /* checkbox “selecionar todos” */
+  flex: 0 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coupon-filters .f-name{          /* Nome do cupom */
+  flex: 2 1 420px;                 /* ocupa mais espaço */
+  min-width: 320px;
+}
+
+.coupon-filters .f-code{          /* Código do cupom */
+  flex: 1 1 320px;
+  min-width: 260px;
+}
+
+.coupon-filters .f-seller,        /* Loja */
+.coupon-filters .f-category{      /* Categoria */
+  flex: 1 1 320px;
+  min-width: 260px;
+}
+
+/* Altura consistente dos controles */
+.coupon-filters input[type="text"],
+.coupon-filters select{
+  height: 40px;
+  padding: 6px 10px;
+}
+
+/* Botões sempre à direita */
+.coupon-filters .filters-actions{
+  margin-left: auto;              /* empurra para a direita */
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.coupon-filters .filters-actions button{
+  height: 40px;
+  padding: 0 16px;
+}
+
+/* ====== BREAKPOINTS ====== */
+
+/* Telas MUITO largas: tudo em 1 linha com folga */
+@media (min-width: 1800px){
+  .coupon-filters{
+    gap: 12px 20px;
+  }
+  .coupon-filters .f-name{ flex-basis: 500px; }
+  .coupon-filters .f-code{ flex-basis: 360px; }
+  .coupon-filters .f-seller,
+  .coupon-filters .f-category{ flex-basis: 360px; }
+}
+
+/* Intermediário: permite duas linhas organizadas */
+@media (max-width: 1400px){
+  .coupon-filters .f-name{ flex-basis: 380px; }
+  .coupon-filters .f-code,
+  .coupon-filters .f-seller,
+  .coupon-filters .f-category{ flex-basis: 300px; }
+}
+
+/* Mobile / telas estreitas: cada campo em linha cheia, botões no fim à direita */
+@media (max-width: 900px){
+  .coupon-filters .f-name,
+  .coupon-filters .f-code,
+  .coupon-filters .f-seller,
+  .coupon-filters .f-category{
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+  .coupon-filters .filters-actions{
+    width: 100%;
+    margin-left: 0;
+    justify-content: flex-end;    /* botões continuam à direita */
+  }
+}
+
+/* Somente os inputs de texto dentro do bloco de filtros */
+#couponFilters input[type="text"],
+#couponFilters input:not([type]) {              /* cobre inputs sem atributo type */
+  box-sizing: border-box;
+  width: 100%;
+  height: 42px;
+  padding: 0 12px;
+  background: #fff;
+  border: 1px solid #d8dee4;
+  border-radius: 10px;
+  color: #0f172a;
+  outline: none;
+  transition: border-color .15s ease, box-shadow .15s ease;
+  appearance: none;
+}
+
+/* placeholder não-italico, cor suave */
+#couponFilters input[type="text"]::placeholder,
+#couponFilters input:not([type])::placeholder {
+  color: #6b7280;
+  font-style: normal;
+  opacity: 1;
+}
+
+/* estados */
+#couponFilters input[type="text"]:hover,
+#couponFilters input:not([type]):hover {
+  border-color: #c9ced6;
+}
+#couponFilters input[type="text"]:focus,
+#couponFilters input:not([type]):focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37,99,235,.18);
+}
+
+/* Não deixe o iOS dar zoom ao focar inputs com fonte < 16px */
+@media (max-width: 768px) {
+  .coupons-grid { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  /* Fontes mínimas confortáveis */
+  .coupons-grid,
+  .coupons-grid .coupon-row .cell { font-size: 16px; }
+}
+
+/* Bloco dos filtros */
+#couponFilters {
+  /* se quiser que grude no topo em telas pequenas */
+  position: sticky; top: 0; z-index: 30; background: #f4f8fe; /* ajuste o top se seu header for fixo */
+  border-bottom: 1px solid #eef2f7;
+}
+
+/* Inputs de texto e selects dentro do #couponFilters */
+@media (max-width: 768px) {
+  #couponFilters { gap: 10px; padding: 10px; }
+
+  #couponFilters input[type="text"],
+  #couponFilters input:not([type]),      /* cobre inputs sem atributo type */
+  #couponFilters select {
+    box-sizing: border-box;
+    width: 100%;
+    height: 48px;               /* altura “tocável” */
+    padding: 0 12px;
+    font-size: 16px;            /* evita zoom e melhora leitura */
+    border: 1px solid #d8dee4;
+    border-radius: 10px;
+  }
+
+  /* Botões maiores e à direita */
+  #couponFilters .filters-actions {
+    display: flex; gap: 8px; justify-content: flex-end; align-items: center;
+  }
+  #couponFilters .filters-actions button {
+    height: 46px; padding: 0 16px; font-size: 16px; border-radius: 10px;
+  }
+}
+
+/* Telefones menores */
+@media (max-width: 420px) {
+  #couponFilters { grid-template-columns: 1fr; }
+  #couponFilters .filters-actions { justify-content: stretch; }
+  #couponFilters .filters-actions button { flex: 1 1 auto; } /* botões ocupam a linha inteira */
+}
+
+@media (max-width: 768px) {
+  .coupon-row { padding: 12px; }
+  .coupon-row .cell { font-size: 16px; line-height: 1.35; }
+  /* se você usa labels com ::before, aumente também */
+  .coupon-row .cell[data-label]::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 13.5px;
+    color: #64748b;
+    margin-bottom: 4px;
+  }
+}
+ 
+ 
+ /* ========== Alinhamento lateral com a lista ========== */
+/* Use o mesmo “respiro” que suas linhas usam (12px no seu layout).
+   Se suas linhas usam outro valor, só troque aqui na variável. */
+:root{
+  --block-x: 12px;
+}
+
+.paginacaotop,
+.coupon-filters{
+  margin-left:  var(--block-x);
+  margin-right: var(--block-x);
+}
+
+/* garante que o conteúdo não “estoure” e respeite a largura com as bordas */
+.coupon-filters{
+  box-sizing: border-box;
+}
+
+/* (opcional) Se quiser que a paginação alinhe também verticalmente com os cards */
+.paginacaotop{ margin-top: 6px; margin-bottom: 10px; }
+
+/* Paginação: manter uma linha abaixo de 1700px (como já feito) */
+@media (max-width: 1700px){
+  .paginacaotop .paginator{
+    flex-wrap: nowrap;
+    white-space: nowrap; 
+					 
+						  
+  }
+  .paginacaotop .paginator::-webkit-scrollbar{ height: 6px; }
+}
+
+#content.mainwide .sect {
+    width: 99% !important; 
+	margin: 15px 2px 10px 2px
+}
+
+
+/* --- Barra do topo e alinhamento do botão --- */
+.top-heading.group{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 0 12px;
+}
+
+.top-heading.group .left_float{ min-height: 32px; }
+
+/* remove o padding inline do container do botão */
+.top-heading.group > div:last-child{ 
+  padding: 0 !important;
+}
+
+/* --- Lista de ações (onde está o "Adicionar") --- */
+#log_tools{
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#log_tools li{ margin: 0; padding: 0; }
+
+/* --- Botão CTA: destaque visual --- */
+#log_tools > li > a{
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 18px;
+  border-radius: 10px;
+  background: #2563eb;                /* azul destaque */
+  border: 1px solid #1d4ed8;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  box-shadow: 0 6px 14px rgba(37,99,235,.28);
+  transition: transform .08s ease, box-shadow .2s ease, background .2s ease;
+}
+
+/* Ícone simples de plus antes do texto (opcional) */
+#log_tools > li > a::before{
+  content: "＋";
+  font-size: 16px;
+  line-height: 0;
+  margin-right: 8px;
+}
+
+#log_tools > li > a:hover{
+  background: #1d4ed8;
+  box-shadow: 0 8px 18px rgba(37,99,235,.35);
+  transform: translateY(-1px);
+}
+#log_tools > li > a:active{
+  transform: translateY(0);
+  box-shadow: 0 3px 9px rgba(37,99,235,.25);
+}
+
+/* --- Responsivo: mantém o CTA visível e fácil de clicar --- */
+@media (max-width: 768px){
+  .top-heading.group{
+    position: sticky;   /* fica preso no topo ao rolar */
+    top: 56px;          /* ajuste conforme altura do cabeçalho */
+    z-index: 15;
+    background: #fff;
+    padding: 8px 4px;
+  }
+  #log_tools{ width: 100%; }
+  #log_tools > li{ flex: 1; }
+  #log_tools > li > a{
+    width: 92%;
+    justify-content: center;
+    font-size: 16px;
+    padding: 12px 18px;
+  }
+}
+/* Barra do topo com botão à direita */
+.top-heading.group{
+   background: linear-gradient(180deg, rgba(37,121,235,.06), rgba(37,121,235,.03));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 14px;           /* evita que o botão encoste e “corte” na borda */
+}
+.top-heading.group .left_float{ min-height: 32px; }
+.top-heading.group .the-button{
+  margin-left: auto;            /* empurra o botão para a direita */
+  flex-shrink: 0;               /* impede de “apertar” o botão */
+}
+
+/* Botão Salvar (CTA) */
+#run-button.input-btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 42px;
+  padding: 0 18px;
+  background: #2563eb;              /* azul destaque */
+  border: 1px solid #1d4ed8;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 10px;
+  cursor: pointer;
+  white-space: nowrap;               /* não quebra o texto */
+  box-shadow: 0 6px 14px rgba(37,99,235,.28);
+  transition: transform .08s ease, box-shadow .2s ease, background .2s ease;
+  overflow: visible;                 /* evita cortes */
+}
+
+#run-button.input-btn:hover{
+  background: #1d4ed8;
+  box-shadow: 0 8px 18px rgba(37,99,235,.35);
+  transform: translateY(-1px);
+}
+#run-button.input-btn:active{
+  transform: translateY(0);
+  box-shadow: 0 3px 9px rgba(37,99,235,.25);
+}
+
+/* Corrige o spinner que vinha com width:83px inline */
+#spinner-top{
+  display: none !important;     /* só aparece quando estiver carregando */
+  width: auto !important;
+  height: 16px;
+  margin-right: 2px;
+}
+#spinner-top img{
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+/* Quando quiser mostrar o loading, adicione a classe .is-loading ao botão via JS */
+#run-button.is-loading #spinner-top{ display: inline-block !important; }
+#run-button.is-loading{ pointer-events: none; opacity: .9; }
+
+/* Escopo para não vazar estilos */
+.option_box .cjt-wrapped-select {
+  --select-width: 280px;          /* ajuste aqui a largura */
+  --select-height: 40px;          /* altura do controle */
+  --select-radius: 8px;
+  --select-border: #d1d5db;       /* cinza 300 */
+  --select-bg: #fff;
+  --select-text: #111827;         /* cinza 900 */
+  --select-placeholder: #6b7280;  /* cinza 500 */
+  --select-focus: #3b82f6;        /* azul 500 */
+  --select-focus-ring: rgba(59,130,246,.15);
+
+  position: relative;
+  display: inline-block;
+  width: var(--select-width);
+  max-width: 95%;
+  vertical-align: middle;
+  /* mata possíveis heranças antigas */
+  background: none;
+  border: 0;
+  box-shadow: none;
+}
+
+/* Reseta tudo que o legado pode ter colocado */
+.option_box .cjt-wrapped-select *,
+.option_box .cjt-wrapped-select *::before,
+.option_box .cjt-wrapped-select *::after {
+  box-sizing: border-box;
+  background: none;
+}
+
+/* O <select> fica “por cima”, 100% clicável, mas invisível.
+   A label .cjt-wrapped-select-skin mostra o valor. */
+.option_box .cjt-wrapped-select select {
+  position: absolute;
+  inset: 0;                 /* top:0 right:0 bottom:0 left:0 */
+  width: 88%;
+  height: 100%;
+  opacity: 0;               /* invisível, mas acessível */
+  cursor: pointer;
+  border: 0;
+  margin: 0;
+  appearance: none;
+}
+
+/* “Pílula” visual (o que você vê) */
+.option_box .cjt-wrapped-select .cjt-wrapped-select-skin {
+  display: block !important;
+  width: 88%!important;
+  height: var(--select-height);
+  line-height: calc(var(--select-height) - 2px);
+  padding: 0 36px 0 14px !important;   /* espaço para a seta à direita */
+  border: 1px solid var(--select-border) !important;
+  border-radius: var(--select-radius);
+  background: var(--select-bg);
+  color: var(--select-text);
+  font-size: 14px;
+  white-space: nowrap !important;
+  overflow: hidden;
+  text-overflow: ellipsis !important;
+  pointer-events: none !important;     /* clique passa para o <select> */
+  box-shadow: inset 0 1px 2px rgba(16,24,40,.04);
+}
+
+/* Estado de foco acessível */
+.option_box .cjt-wrapped-select:focus-within .cjt-wrapped-select-skin {
+  border-color: var(--select-focus);
+  box-shadow: 0 0 0 3px var(--select-focus-ring);
+}
+
+/* Setinha */
+.option_box .cjt-wrapped-select .cjt-wrapped-select-icon {
+	margin-top: 0px;
+  position: absolute  ; 
+  top: 50% !important;
+  width: 0 !important;
+  height: 0 !important;
+  border-left: 6px solid transparent !important;
+  border-right: 6px solid transparent !important;
+  border-top: 6px solid var(--select-placeholder) !important;
+  transform: translateY(-50%) !important;
+  pointer-events: none !important;
+}
+
+/* Desabilitado */
+.option_box .cjt-wrapped-select select:disabled + .cjt-wrapped-select-skin {
+  background: #f3f4f6;              /* cinza 100 */
+  color: #9ca3af;                   /* cinza 400 */
+  border-color: #e5e7eb;            /* cinza 200 */
+  cursor: not-allowed;
+}
+
+.option_box .cjt-wrapped-select select:disabled ~ .cjt-wrapped-select-icon {
+  border-top-color: #cbd5e1;        /* cinza 300 */
+}
+
+/* Em telas touch, deixe o nativo aparecer (opcional) */
+@media (pointer: coarse) {
+  .option_box .cjt-wrapped-select .cjt-wrapped-select-skin,
+  .option_box .cjt-wrapped-select .cjt-wrapped-select-icon {
+    display: none;
+  }
+  .option_box .cjt-wrapped-select select {
+    opacity: 1;
+    position: static; 
+    padding: 0 10px;
+    border: 1px solid var(--select-border);
+    border-radius: var(--select-radius);
+    background: var(--select-bg);
+    color: var(--select-text);
+    appearance: auto;
+  }
+}
+ 
+
+/* Hotfix para impedir sobreposição quando há id duplicado */
+#type-select-cjt-wrapped-select { 
+	padding-top: 4px !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important; 
+  margin: 8px 0 14px !important; /* espaço entre os selects */
+}
+
+ 
+/* O select invisível cobre toda a área clicável */
+#type-select-cjt-wrapped-select select {
+  position: absolute !important;
+  inset: 0 !important; /* top:0; right:0; bottom:0; left:0 */
+  height: 34px  !important;
+  opacity: 0 !important;
+  cursor: pointer; 
+}
+
+ 
+  /* Neutraliza o width inline e encosta os botões à direita */
+.top-heading.group { display: flex; align-items: center; }
+.top-heading.group .the-button {
+  width: auto !important;          /* anula o width:603px inline */
+  max-width: none !important;
+  flex: 0 0 auto;                  /* não estica, nem encolhe */
+  margin-left: auto !important;    /* empurra para a direita */
+  float: none !important;
+  display: flex;                   /* botões lado a lado */
+  gap: 10px;
+}
+
+/* (Opcional) só atira nessa .the-button quando houver style inline */
+.top-heading.group .the-button[style] { width: auto !important; }
+
+ 
+.box  { 
+    padding: 7px !important;
+}
+/* Linha do título + ações */
+.top-heading.group{
+  display: flex;            /* coloca tudo na mesma linha */
+  align-items: center;      /* alinha verticalmente */
+}
+
+/* o título não deve flutuar quando usamos flex */
+.top-heading .left_float{
+  float: none !important;
+  margin: 0;
+}
+
+/* o <div> que contém #log_tools vai para a direita */
+.top-heading.group > div:last-child{
+  margin-left: auto;        /* empurra para a direita */
+  padding: 10px 0 !important;
+}
+
+/* arruma a UL para não “puxar” para o meio */
+#log_tools{
+  display: flex;
+  gap: .5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#log_tools li{ margin: 0; }
+ 
+ /* ===== Respiro entre campos e labels ===== */
+
+/* Espaço ANTES de cada label, exceto a 1ª de cada coluna */
+.option_box .starts .report-head:not(:first-of-type),
+.option_box .ends  .report-head:not(:first-of-type) {
+  margin-top: 14px !important;
+}
+
+/* Espaço DEPOIS da label (entre label e o input abaixo) */
+.option_box .report-head {
+  margin-bottom: 0px !important;
+}
+
+/* Campos “soltos” e grupos: adiciona espaço abaixo do campo */
+.option_box .group,
+.option_box .cjt-wrapped-select,
+.option_box input[type="text"],
+.option_box input[type="file"],
+.option_box textarea {
+  margin-bottom: 10px !important;
+}
+
+/* (opcional) radios do “Status” com um pouco de folga lateral */
+.option_box input[type="radio"] { margin-right: 6px; }
+
+
+/* Título da seção à esquerda */
+.top-heading.group{
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+}
+.top-heading.group .left_float{
+  float: none !important;      /* anula floats antigos */
+  margin-right: auto !important; /* empurra outros itens (botões) p/ direita */
+  text-align: left !important;
+}
+.top-heading.group h4{ margin: 0 !important; }
+
+/* Container do título */
+.top-heading.group{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:12px 16px;
+  border:1px solid #e7edf6;
+  background:#f7fafc;            /* leve off-white */
+  border-radius:12px;
+  box-shadow:0 1px 2px rgba(16,24,40,.03);
+}
+
+/* Zera estilos antigos */
+.top-heading .left_float{ float:none; }
+
+/* Título com vibe computacional */
+  h4{
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+  font-weight:700;
+  font-size: clamp(16px, 0.8vw, 22px);
+  line-height:1.25;
+  letter-spacing:.2px;
+  color:#0f172a;                 /* navy-900 */
+  margin:0;
+  text-transform:uppercase;           /* melhora leitura se vier tudo em caps */
+  overflow:hidden;               /* evita quebrar layout em títulos gigantes */
+  display:-webkit-box;
+  -webkit-line-clamp:2;          /* até 2 linhas */
+  -webkit-box-orient:vertical;
+}
+
+h4::before{
+  content:"";
+  display:inline-block;
+  width: .9em;               /* largura da seta */
+  height: .9em;              /* altura da seta */
+  margin-right: .45em;
+  background: linear-gradient(180deg,#2563eb,#22d3ee);
+  /* triangula a caixinha */
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 50%, 0 100%); /* compat */
+  vertical-align: -.1em;     /* ajuste fino na linha */
+}
+
+
+
+/* Caixa de informação mais suave */
+.infosh{
+  /* tipografia */
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #475569;                    /* slate-600 */
+
+  /* visual */
+  background: #f8fafc;               /* superfície clara */
+  border: 1px solid #e5e7eb;         /* cinza bem suave */
+  border-left: 4px solid #2563eb;    /* acento (azul) */
+  border-radius: 12px;
+  padding: 12px 14px 12px 44px;
+  margin: 10px 0 16px;
+  box-shadow: 0 1px 2px rgba(16,24,40,.04);
+
+  /* ícone */
+  position: relative;
+}
+
+/* Ícone “i” (SVG inline) */
+.infosh::before{
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 12px;
+  width: 20px; 
+  height: 20px;
+  background-image: url('data:image/svg+xml;utf8,\
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffffff">\
+    <circle cx="12" cy="12" r="10" fill="%232563eb"/>\
+    <rect x="11" y="10" width="2" height="7" rx="1"/>\
+    <rect x="11" y="6.5" width="2" height="2" rx="1"/>\
+  </svg>');
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+
+/* Deixa as quebras de linha com espaçamento confortável */
+.infosh br{
+  content: "";
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Exemplo de código (você usa <b> hoje; estilizamos como "code") */
+.infosh b{
+  font-weight: 500;                   /* menos “gritado” */
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  background: #eef2ff;               /* lilás clarinho */
+  color: #1e293b;
+  padding: 2px 6px;
+  border: 1px solid #e0e7ff;
+  border-radius: 6px;
+}
+
+/* (Opcional) Links dentro do aviso */
+.infosh a{
+  color: #2563eb;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(37,99,235,.35);
+}
+.infosh a:hover{
+  border-bottom-color: #2563eb;
+}
+
+#cboxNext {
+    display: none !important;
+}
+
+#cboxPrevious {
+    display: none !important;
+}
+
+#cboxSlideshow {
+    display: none !important;
+}
+
+button, input[type=button], input[type=submit], input.formbutton, button.formbutton, button.formbutton2 {
+  background: var(--primary) !important;
+  width: 8rem;
+}
+
+/* Corrige somente o botão de fechar do Colorbox */
+#colorbox #cboxClose,
+#cboxContent #cboxClose {
+  background: transparent !important;     /* anula o background global */
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  width: 28px !important;
+  height: 28px !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  position: absolute !important;
+  top: 8px;
+  right: 8px;
+  text-indent: 0 !important;              /* garante que o símbolo apareça */
+  color: #334155 !important;
+  cursor: pointer !important;
+  border-radius: 6px !important;
+  z-index: 9999 !important;
+}
+
+/* Desenha o X como ícone, independente de imagem */
+#colorbox #cboxClose::before,
+#cboxContent #cboxClose::before {
+  content: "✕";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+}
+ 
+/* Hover suave */
+#colorbox #cboxClose:hover,
+#cboxContent #cboxClose:hover {
+  background-color: #f1f5f9 !important;
+}
+
+
+/* Colorbox: botão fechar — posiciona mais abaixo e esconde o texto "close" */
+#colorbox #cboxClose,
+#cboxContent #cboxClose {
+  position: absolute !important;
+  top: 16px !important;          /* ↓ ajuste aqui para deixar mais abaixo (ex.: 18px, 20px) */
+  right: 10px !important;
+  width: 28px !important;
+  height: 28px !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+  z-index: 9999 !important;
+
+  /* esconde o texto "close" e usa apenas o ícone do ::before */
+  font-size: 0 !important;
+  color: inherit !important;   /* evita herdar cor estranha */
+}
+
+#colorbox #cboxClose::before,
+#cboxContent #cboxClose::before {
+  content: "✕";
+  font-size: 16px;             /* tamanho do ícone */
+  font-weight: 700;
+  line-height: 1;
+  color: #334155;
+}
+
+#colorbox #cboxClose:hover,
+#cboxContent #cboxClose:hover {
+  background-color: #f1f5f9 !important;
+}
+
+/* userbar – chip moderno com usuário + sair */
+.vipmin-userbar{
+  position: fixed;               /* fica no topo sempre visível */
+  top: 18px;
+  right: 300px;                  /* deixa espaço pro botão verde à direita */
+  z-index: 1900;
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+.vipmin-userbar .user-chip{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  color: #e8f0ff;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.15);
+  box-shadow: 0 8px 24px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.05);
+  backdrop-filter: blur(6px);
+}
+.vipmin-userbar .user-chip .meta{
+  line-height: 1.1;
+  font-size: 13px;
+  font-weight: 500;
+}
+.vipmin-userbar .user-chip .hello{ opacity:.75; margin-right:4px; font-weight:400; }
+
+.vipmin-userbar .user-chip .logout{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: .35rem .6rem;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.18);
+  transition: all .2s ease;
+}
+.vipmin-userbar .user-chip .logout:hover{
+  background: #e64545;
+  border-color: #e64545;
+  box-shadow: 0 8px 22px rgba(230,69,69,.35);
+}
+
+.vipmin-userbar .user-chip svg{
+  width: 18px; height: 18px;
+  stroke: currentColor;
+}
+
+/* esconder os elementos antigos */
+#hd .guides, #hd .vcoupon{ display:none !important; }
+
+/* responsivo: em telas menores, o chip “desce” e compacta */
+@media (max-width: 1200px){
+  .vipmin-userbar{ right: 16px; top: 70px; }
+}
+@media (max-width: 820px){
+  .vipmin-userbar .meta, .vipmin-userbar .logout span{ display:none; }
+  .vipmin-userbar .user-chip{ padding:8px; }
+}
+
+a:visited {
+	color: UNSET !important;
+	text-decoration: none;
+	outline: none;
+}
+
+/* 1) O header vira o "referencial" do posicionamento */
+#hd { 
+  position: relative; 
+}
+
+/* 2) Userbar ancorada dentro do header (topo direita) */
+.vipmin-userbar{
+  position: absolute !important;  /* deixa de cair no fluxo */
+  top: 18px;                      /* ajuste fino vertical */
+  right: 24px;                    /* grudadinho à direita */
+  transform: none !important;
+  margin: 0 !important;
+  z-index: 5;                     /* acima do menu */
+}
+
+.vipmin-header .brand img {
+    max-width: 330px;
+    max-height: 61px;
+}
+
+/* Header com altura garantida e contexto de posicionamento */
+#hd{
+  position: relative;
+  min-height: 96px;          /* garante espaço para logo + respiro */
+}
+
+/* Chip: continua onde está, mas fora do fluxo */
+.vipmin-userbar{
+  position: absolute;        /* dentro de #hd */
+  top: 10px;                 /* ajuste fino vertical */
+  right: 120px;              /* deixa espaço pro botão fixo "Ver alterações" */
+  z-index: 2500;
+}
+
+/* Menu: empurra um pouco pra baixo SOMENTE quando há .vipmin-userbar antes dele */
+#hd .vipmin-userbar ~ #menu{
+  margin-top: 18px;          /* ajuste fino – aumente/diminua se quiser */
+}
+
+ 
+ /* padrão: label preta */
+.pill label{
+  color:#111;               /* preto */
+  transition: color .15s ease;
+}
+
+/* quando o rádio está marcado: deixa a label branca */
+.pill input[type="radio"]:checked + label{
+  color:#fff !important;
+}
+
+ 
+
+@media (max-width: 1235px){
+
+  /* O contêiner passa a rolar na horizontal */
+  .sect{
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* rolagem suave no iOS */
+  }
+
+  /* A tabela não encolhe demais: usa a soma das colunas */
+  .sect .coupons-table{
+    width: max-content;
+    min-width: 1080px;                 /* ajuste se tiver +/– colunas */
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  /* Evita que as últimas colunas “sumam” por encolher demais */
+  .sect .coupons-table th,
+  .sect .coupons-table td{
+    white-space: nowrap;
+  }
+
+  /* A coluna de “Interesse” pode quebrar linha para caber melhor */
+  .sect .coupons-table th:nth-child(6),
+  .sect .coupons-table td:nth-child(6){
+    white-space: normal;
+    max-width: 320px;                  /* ajuste fino conforme necessidade */
+  }
+
+  /* Coluna de Ações (botões) com largura mínima e sem quebra */
+  .sect .coupons-table td.op{
+    white-space: nowrap;
+    min-width: 260px;
+  }
+
+  /* Inputs do header não “explodem” a largura no mobile */
+  .sect .coupons-table th input,
+  .sect .coupons-table th select{
+    max-width: 170px;
+  }
+
+  /* (opcional) scrollbar mais amigável */
+  .sect::-webkit-scrollbar{ height: 8px; }
+  .sect::-webkit-scrollbar-thumb{ background:#c7d2fe; border-radius: 8px; }
+  .sect::-webkit-scrollbar-track{ background:transparent; }
+}
+
+/* ==== MOBILE/TABLET: só aqui corrigimos o scroll da tabela ==== */
+@media (max-width: 1235px){
+
+  /* o container da tabela passa a rolar na horizontal */
+  .sect{
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* garante largura mínima para não quebrar colunas */
+  #orders-list{
+    min-width: 1200px;           /* ajuste se precisar */
+    table-layout: auto;
+    border-collapse: separate;   /* evita “colagem” com sticky antigo */
+  }
+
+  /* remove QUALQUER sticky/offset antigo que possa estar ativo */
+  #orders-list th,
+  #orders-list td{
+    position: static !important;
+    left: auto !important;
+    z-index: 1 !important;
+    white-space: nowrap;         /* evita quebra feia nas células */
+    color: inherit !important;   /* garante texto visível */
+    background: #fff;            /* fundo neutro ao rolar */
+  }
+
+  /* (opcional e seguro) manter apenas a 1ª coluna fixa */
+  #orders-list th:first-child,
+  #orders-list td:first-child{
+    position: sticky !important;
+    left: 0 !important;
+    z-index: 2 !important;
+    background: #fff;            /* cobre o conteúdo ao rolar */
+  }
+
+  /* barra de rolagem mais amigável (opcional) */
+  .sect::-webkit-scrollbar{ height: 10px; }
+  .sect::-webkit-scrollbar-track{ background: #eef2f7; }
+  .sect::-webkit-scrollbar-thumb{ background: #c7d2fe; border-radius: 8px; }
+  
+  
+  /* Força 65% de largura nos filtros do cabeçalho da tabela,
+   mesmo que exista style="width: 90%" inline */
+#orders-list.coupons-table th input[type="text"],
+#orders-list.coupons-table th input[type="email"],
+#orders-list.coupons-table th input[type="search"],
+#orders-list.coupons-table th input:not([type]),
+#orders-list.coupons-table th select {
+  width: 65% !important;
+  max-width: 65% !important;
+  box-sizing: border-box;
+  height: 28px;
+  padding: 2px 6px;
+  font-size: 11px;
+}
+
+
+}
+ 
+ 
+ /* SOMENTE MOBILE/TABLET – vale para QUALQUER tabela do Vipmin */
+@media (max-width: 1235px){
+
+  /* o(s) contêiner(es) mais comuns do Vipmin passam a rolar horizontalmente */
+  #bdw, 
+  #bdw .coupons-box,
+  #bdw .box-content,
+  #bdw .sect{
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* qualquer tabela dentro do Vipmin ganha largura mínima p/ não quebrar */
+  #bdw table{
+    table-layout: auto;
+    min-width: 1080px;              /* ajuste fino conforme a página */
+    border-collapse: separate;      /* evita “amassar” colunas */
+  }
+
+  /* === COLUNAS COM INPUT (filtros) — ficam mais largas === */
+  /* pega qualquer <th> que contenha <input> (Chrome/Edge/Firefox modernos) */
+  #bdw table tr:first-child th:has(input){
+    width: 240px !important;
+    min-width: 240px;
+  }
+  /* inputs sempre ~65%, ignorando width inline */
+  #bdw table tr:first-child th input{
+    width: 65% !important;
+    max-width: none;
+  }
+
+  /* === COLUNAS SEM INPUT — compactas e com reticências === */
+  #bdw table tr:first-child th:not(:has(input)),
+  #bdw table td{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  #bdw table tr:first-child th:not(:has(input)){
+    width: 110px !important;
+    min-width: 110px;
+  }
+
+  /* Afinamentos genéricos que ajudam em quase todas as listas do Vipmin */
+  /* Nome */
+  #bdw table th:nth-child(2), #bdw table td:nth-child(2){
+    min-width: 200px;
+  }
+  /* Email */
+  #bdw table th:nth-child(3), #bdw table td:nth-child(3){
+    min-width: 260px;
+  }
+  /* Coluna “Interesse” costuma ser grande — deixa um pouco mais larga */
+  #bdw table th:nth-child(6), #bdw table td:nth-child(6){
+    min-width: 220px;
+    max-width: 280px;
+  }
+  /* Coluna de ações/botões normalmente é a última */
+  #bdw table th:last-child, #bdw table td.op{
+    min-width: 300px;
+  }
+  /* ID enxuto */
+  #bdw table th:nth-child(1), #bdw table td:nth-child(1){
+    min-width: 80px;
+  }
+}
+
+/* Fallback OPCIONAL se quiser restringir só às tabelas de listagem,
+   mantendo o resto intacto: troque “#bdw table” por “table.coupons-table”. */
+
+
+
+/* ====== CADASTRO: Header compacto + botões menores ====== */
+.box-content .option_box .top-heading.group{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  /* sobe o bloco para encostar nos tabs */
+  margin-top:-10px;
+  margin-bottom:10px;
+}
+
+.box-content .top-heading .left_float h4{
+	color: #000 !important;
+  margin:0;
+  font-size:18px;
+  line-height:1.2;
+}
+
+/* remove largura fixa inline do container de botões */
+.box-content .top-heading .the-button{
+  width:auto !important;
+  display:flex;
+  gap:8px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+/* botões menores e mais elegantes */
+.box-content .top-heading .the-button .input-btn{
+  height:36px;
+  padding:0 14px;
+  font-size:14px;
+  border-radius:10px;
+  line-height:36px;
+  box-shadow:0 1px 0 rgba(255,255,255,.35) inset, 0 1px 2px rgba(0,0,0,.1);
+}
+
+/* oculta “largura fantasma” do spinner quando não usado */
+.box-content .top-heading .the-button #spinner-top{ display:none !important; }
+
+/* ====== Respiro à direita (form + editor) ====== */
+.box-content #container_box,
+.box-content .option_box .option_contents,
+.box-content .sect,
+.box-content .field{
+  padding-right:16px;
+}
+
+/* CKEditor não colado na borda direita */
+.box-content .cke_chrome{
+  margin-right:16px;
+  border-radius:12px;
+  overflow:hidden;
+}
+
+/* Quando houver colunas (starts/ends), dá um ar à direita também */
+.box-content .option_box .form-contain .starts,
+.box-content .option_box .form-contain .ends{
+  padding-right:12px;
+}
+
+/* ====== Ajustes mobile ====== */
+@media (max-width: 900px){
+  .box-content .option_box .top-heading.group{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+    margin-top:-8px;
+  }
+  .box-content .top-heading .the-button{
+    width:100% !important;
+    justify-content:flex-start;
+    gap:8px;
+  }
+  .box-content .top-heading .the-button .input-btn{
+    height:34px;
+    line-height:34px;
+    padding:0 12px;
+    font-size:13px;
+    border-radius:9px;
+  }
+  .box-content .cke_chrome{ margin-right:12px; }
+}
+
+@media (max-width: 900px){
+  /* ===== Header compacto (título + botões) ===== */
+  .box-content .option_box .top-heading.group{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:-12px;  /* “sobe” o bloco */
+    margin-bottom:10px;
+  }
+  .box-content .top-heading .left_float h4{
+    margin:0;
+    font-size:16px;
+    line-height:1.2;
+  }
+  .box-content .top-heading .the-button{
+    width:100% !important;            /* sobrescreve width inline */
+    display:flex;
+    align-items:center;
+    gap:8px;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+  }
+  .box-content .top-heading .the-button .input-btn{
+    height:34px;
+    line-height:34px;
+    padding:0 12px;
+    font-size:13px;
+    border-radius:9px;
+    box-shadow:0 1px 0 rgba(255,255,255,.35) inset, 0 1px 2px rgba(0,0,0,.08);
+  }
+  .box-content .top-heading .the-button #spinner-top{
+    display:none !important;          /* remove “largura fantasma” do spinner */
+  }
+
+  /* ===== Respiro à direita (form + editor) ===== */
+  .box-content #container_box,
+  .box-content .option_box .option_contents,
+  .box-content .sect,
+  .box-content .field{
+    padding-right:3px;
+  }
+  .box-content .option_box .form-contain .starts,
+  .box-content .option_box .form-contain .ends{
+    padding-right:12px;
+  }
+  .box-content .cke_chrome{
+    margin-right:12px;
+    border-radius:12px;
+    overflow:hidden;
+  }
+  .box-content .cke_wysiwyg_frame{
+    width:100% !important;
+  }
+  
+  .top-heading {
+    position: inherit  !important;
+	}
+
+	.top-heading.group > div:last-child {
+		margin-left: auto;
+		padding: 0px 18px !important; */
+	}
+
+}
+
+@media (max-width: 900px){
+  /* ===== Form em 1 coluna ===== */
+  .option_box .form-contain.group{
+    display:block;
+  }
+  .option_box .form-contain .starts,
+  .option_box .form-contain .ends{
+    float:none !important;           /* quebra layout em colunas/floats */
+    width:100% !important;
+    max-width:none !important;
+    min-height:unset !important;
+    margin:0;
+    padding:0 0 8px 0;
+    border:0 !important;             /* remove divisória pontilhada */
+    background-image:none !important;
+  }
+  .option_box .form-contain .ends{   /* espaço entre os blocos */
+    margin-top:14px;
+  }
+
+  /* Espaçamento entre grupos e títulos */
+  .option_box .form-contain .group{ margin-bottom:12px; }
+  .option_box .form-contain .report-head{ margin:8px 0 6px; }
+
+  /* Inputs full width (sobrepõe estilos inline) */
+  .option_box .form-contain input[type="text"],
+  .option_box .form-contain input[type="number"],
+  .option_box .form-contain input[type="email"],
+  .option_box .form-contain input[type="password"],
+  .option_box .form-contain select,
+  .option_box .form-contain textarea{
+    width:100% !important;
+    box-sizing:border-box;
+    min-height:38px;
+  }
+
+  /* Radios mais amigáveis no mobile */
+  .option_box .form-contain input[type="radio"]{
+    margin-right:6px;
+    transform:scale(1.05);
+  }
+
+  /* Ícone de ajuda alinhado */
+  .option_box .form-contain img.tTip{
+    vertical-align:middle;
+    margin-left:6px;
+    opacity:.9;
+  }
+  .rv-dot {
+  display: none !important;
+  }
+  
+  /* Coloque junto do seu CSS */
+	.cfg-desc{
+	  margin-top:14px;
+	  line-height:1.45;
+	}
+	.cfg-desc .cfg-note{
+	  display:block;        /* vira bloco, quebra a linha */
+	  margin-top:8px;       /* funciona corretamente agora */
+	  clear:both;           /* previne encavalamento com floats */
+	  white-space:normal;   /* garante quebra de linha */
+	  overflow-wrap:break-word;
+	}
+
+
+}
+
+
+
+/* —— Nota do “plano grátis = ID 10” (1ª linha da tabela) —— */
+#orders-list tr:first-child td[colspan]{
+  text-align: left !important;
+  color:#334155;
+  background: linear-gradient(180deg,#f8fafc 0%,#fff 100%);
+  border:1px dashed #dbe3f3;
+  border-left:4px solid #2563eb;
+  padding:10px 12px !important;
+  border-radius:10px;
+  font:600 13px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+}
+#orders-list tr:first-child td[colspan]::before{
+  content:"Nota";
+  margin-right:8px;
+  color:#2563eb;
+  font-weight:700;
+  opacity:.9;
+}
+
+ 
+.atencao{
+	 display:none; 
+}
+  
+ @media (max-width: 700px){
+  /* ===== Form em 1 coluna ===== */
+	 .atencao{
+		 display:block; clear:both; width:100%; box-sizing:border-box;
+	  margin:10px 0 16px; padding:14px 16px;
+	  border:1px dashed #dbe3f3; border-left:4px solid #2563eb;
+	  border-radius:12px; background:#f8fafc;
+	  color:#334155; font:500 13px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+	 }
+ }
+  
+
+ 
+ #bd { 
+    width: 100% !important;
+		 							
+}
+
+.option_box {  																			  
+							  
+    margin: unset !important;
+	 
+}
+
+/* BOTÕES LADO A LADO – APENAS NO RESPONSIVO */
+@media (max-width: 768px) {
+
+    /* Container dos botões */
+    .the-button {
+        width: 100% !important;      /* anula o width:722px do inline */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;                    /* espacinho entre os botões */
+        justify-content: center;
+    }
+
+    /* Cada DIV que envolve o botão */
+    .the-button > div {
+        float: none !important;      /* mata os floats */
+        flex: 1 1 calc(50% - 8px);   /* 2 botões por linha */
+        display: flex;
+    }
+
+    /* O botão em si */
+    .the-button .input-btn {
+        width: 100%;
+        border-radius: 999px;
+        padding: 10px 6px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    /* Opcional: esconder a área do “lendo.gif” pra ficar mais limpo no mobile */
+    .the-button #spinner-top {
+        display: none !important;
+    }
+}
+
+/* BOTÕES "USUÁRIOS" – SOMENTE NO RESPONSIVO */
+@media (max-width: 768px) {
+
+    /* container onde estão os dois blocos */
+    div[style*="padding: 10px;"] {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;              /* espaço entre os botões */
+    }
+
+    /* remove o float:right dos dois blocos internos */
+    div[style*="padding: 10px;"] > div[style*="float:right;"] {
+        float: none !important;
+    }
+
+    /* tira possíveis margens e deixa a UL enxuta */
+    div[style*="padding: 10px;"] ul#log_tools {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    div[style*="padding: 10px;"] ul#log_tools li {
+        margin: 0;
+    }
+
+    /* o link continua com o estilo atual, só garante largura e alinhamento */
+    div[style*="padding: 10px;"] ul#log_tools li a {
+        display: inline-block;
+        min-width: 150px;
+        text-align: center;
+    }
+}
+/* BOTÕES "ADICIONAR / APAGAR TODOS OS ANÚNCIOS"
+   lado a lado apenas no mobile */
+@media (max-width: 768px) {
+
+    /* transforma o UL em flex container */
+    #log_tools {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        padding: 0;
+        margin: 10px 0;
+        list-style: none;
+    }
+
+    /* cada filho direto (button ou <a>) vira um item flex */
+    #log_tools > button,
+    #log_tools > a {
+        flex: 1 1 calc(50% - 8px);   /* 2 botões por linha */
+        display: flex;
+    }
+
+    /* estilo do botão em si (direto ou dentro do <a>) */
+    #log_tools > button.input-btn,
+    #log_tools > a > button.input-btn {
+		        margin-left: 17%;
+        margin-bottom: 5px;
+        width: 67%;
+		 
+        border-radius: 999px;
+        padding: 10px 8px;
+        font-size: 13px;
+        text-align: center;
+    }
+	
+	.paginacaotop { 
+		width:99% ! IMPORTANT;
+	}
+	.the-button-desk { 
+		display:none !IMPORTANT;
+	}
+	
+}
+
+
+/* QUICK SESSIONS – CARDS 3D FUTURISTAS */
+
+section.vmob-quick {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    padding: 10px 4px 16px;
+}
+
+/* Card base */
+section.vmob-quick a.tile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+
+    border-radius: 18px !important;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0f172a !important;
+
+    /* efeito glass/3D */
+    background: linear-gradient(145deg, rgba(255,255,255,.96), rgba(226,232,240,.96)) !important;
+    border: 1px solid rgba(148,163,184,.45) !important;
+    box-shadow:
+        0 18px 30px rgba(15,23,42,.25),
+        0 0 0 1px rgba(148,163,184,.15) !important;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    overflow: hidden;
+    transition: transform .18s ease-out, box-shadow .18s ease-out, background .18s ease-out;
+}
+
+/* Brilho superior */
+section.vmob-quick a.tile::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(135deg, rgba(255,255,255,.7), transparent 55%);
+    opacity: .85;
+    pointer-events: none;
+}
+
+/* Ícone */
+section.vmob-quick a.tile .qicon {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    color: #2563eb !important;
+    filter: drop-shadow(0 0 6px rgba(37,99,235,.45));
+}
+
+/* Texto acima do brilho */
+section.vmob-quick a.tile span {
+    position: relative;
+    z-index: 1;
+}
+
+/* Hover / foco – sobe um pouco */
+section.vmob-quick a.tile:hover,
+section.vmob-quick a.tile:focus-visible {
+    transform: translateY(-3px);
+    box-shadow:
+        0 22px 40px rgba(15,23,42,.32),
+        0 0 0 1px rgba(129,140,248,.35) !important;
+}
+
+/* Clique (apertado) */
+section.vmob-quick a.tile:active {
+    transform: translateY(0);
+    box-shadow:
+        0 10px 20px rgba(15,23,42,.25),
+        0 0 0 1px rgba(148,163,184,.4) !important;
+}
+
+/* Cores diferentes por card */
+section.vmob-quick a.tile:nth-child(1) {
+    background: linear-gradient(145deg, #e0f2fe, #dbeafe) !important;
+}
+section.vmob-quick a.tile:nth-child(2) {
+    background: linear-gradient(145deg, #dcfce7, #bbf7d0) !important;
+}
+section.vmob-quick a.tile:nth-child(3) {
+    background: linear-gradient(145deg, #fef3c7, #fde68a) !important;
+}
+section.vmob-quick a.tile:nth-child(4) {
+    background: linear-gradient(145deg, #ede9fe, #e0e7ff) !important;
+}
+
+/* ===== HOTFIX FINAL: TOP-HEADING (título esquerda | botão direita) ===== */
+#partner .top-heading.group,
+#partner .top-heading,
+.top-heading.group{
+  display:flex !important;
+  flex-direction: row !important;          /* <<< mata o column que te quebra */
+  align-items:center !important;
+  justify-content:flex-start !important;
+  gap:12px !important;
+  flex-wrap:nowrap !important;
+}
+
+/* ESQUERDA: título */
+#partner .top-heading .left_float,
+.top-heading.group .left_float{
+  float:none !important;
+  flex: 1 1 auto !important;
+  min-width:0 !important;
+  margin:0 !important;
+  text-align:left !important;
+}
+#partner .top-heading .left_float h4,
+.top-heading.group .left_float h4{
+  margin:0 !important;
+  width:auto !important;
+  text-align:left !important;
+}
+
+/* DIREITA: botão / ações */
+#partner .top-heading .the-button,
+.top-heading.group .the-button{
+  margin-top: 7px;
+  float:none !important;
+  width:auto !important;                   /* anula width inline */
+  margin-left:auto !important;             /* empurra pra direita */
+  flex: 0 0 auto !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:flex-end !important;
+  position: static !important;             /* mata sticky/align-self antigos */
+  top:auto !important;
+  align-self:auto !important;
+}
+
+/* botão interno alinhado */
+#run-button{
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:10px !important;
+}
+
+/* remove “largura fantasma” do spinner (inline width:83px / display:block) */
+#run-button #spinner-top{
+  width:auto !important;
+  display:none !important;
+}
+#run-button.is-loading #spinner-top{
+  display:inline-flex !important;
+} 
+ 
+ /* Esconde o "vmob-quick" no desktop */
+section.vmob-quick{
+  display:none !important;
+}
+
+/* Mostra apenas em telas menores (ajuste o breakpoint se quiser) */
+@media (max-width: 900px){
+  section.vmob-quick{
+    display: grid !important; /* ou flex, conforme seu layout */
+  }
+}
+
+#c_categoria{
+	margin-top: 28px !important;
+}

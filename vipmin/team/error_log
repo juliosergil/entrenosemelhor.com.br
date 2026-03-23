@@ -1,0 +1,67 @@
+[11-Dec-2025 16:55:01 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_edit.php:155
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/team/edit.php(142): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_edit.php on line 155
+[11-Dec-2025 17:02:06 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_index.php:89
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/team/index.php(58): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_index.php on line 89
+[12-Dec-2025 12:59:45 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_index.php:89
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/team/index.php(58): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_index.php on line 89
+[12-Dec-2025 13:01:04 Brazil/East] PHP Fatal error:  Uncaught TypeError: imagedestroy(): Argument #1 ($image) must be of type GdImage, true given in /home2/juli6348/entrenosemelhor.com.br/include/library/Image.class.php:121
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/Image.class.php(121): imagedestroy(true)
+#1 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(326): Image::convert('/home2/juli6348...', '/home2/juli6348...', 80, 60, 0)
+#2 /home2/juli6348/entrenosemelhor.com.br/vipmin/team/edit.php(88): upload_image('upload_image', 'team/2025/1212/...', 'team', true, NULL)
+#3 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/Image.class.php on line 121
+[12-Dec-2025 14:29:33 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_index.php:89
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/team/index.php(58): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_index.php on line 89
+[12-Dec-2025 14:29:39 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_index.php:89
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/team/index.php(58): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_index.php on line 89
+[12-Dec-2025 14:30:15 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_index.php:89
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/team/index.php(58): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_index.php on line 89
+[12-Dec-2025 14:30:15 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_index.php:89
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/team/index.php(58): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_index.php on line 89
+[12-Dec-2025 14:30:33 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_index.php:89
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/team/index.php(58): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_index.php on line 89
+[12-Dec-2025 14:31:12 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_index.php:89
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/team/index.php(58): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_index.php on line 89
+[19-Dec-2025 10:55:43 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_index.php:89
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/team/index.php(58): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_index.php on line 89
+[19-Dec-2025 10:55:46 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_index.php:89
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/team/index.php(58): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_index.php on line 89
+[19-Dec-2025 10:55:50 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_index.php:89
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/team/index.php(58): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_index.php on line 89

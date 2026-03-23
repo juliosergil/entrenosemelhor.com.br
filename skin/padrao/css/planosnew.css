@@ -1,0 +1,67 @@
+    .h4-panel{
+      display: :block;
+      font-weight: bold !important;
+      unicode-bidi: isolate !important;
+      color: #333 !important;
+
+    }
+
+    .panel-default {
+    border-color: #ddd;
+}
+
+.panel {
+    
+    background-color: #fff !important;
+    border: 2px solid #f5f5f5 !important;
+    border-radius: 8px !important;
+    border-width: 3px !important;
+    
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05) !important;
+    display: block  !important;
+    unicode-bidi: isolate !important;
+    text-align: center !important;
+
+}
+
+
+    .panel-hover {
+      transition: all 0.3s ease;
+      cursor: pointer;
+      margin-bottom: 15px !important;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+      font-size: 14px !important;
+      line-height: 1.42857143 !important;
+      color: #333 !important;
+    }
+    
+    .panel-hover:hover,
+    .panel-hover.active {
+      transform: scale(1.03) !important;
+      border-color: #ff0000 !important;
+      border-radius: 4px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
+    
+    .panel-hover.active .panel-footer,
+    .panel-hover:hover .panel-footer {
+      background-color: #ff0000 !important;
+      border-color: #ff0000 !important;
+    }
+    
+    .panel-hover.active .btn,
+    .panel-hover:hover .btn {
+      text-align: center !important;
+      align-content: center !important;
+      background-color: #ff0000 !important;
+      border-color: #ff0000 !important;
+      color: white !important;
+    }
+
+    /* Remover borda de foco/click */
+    .panel-hover .btn:focus,
+    .panel-hover .btn:active {
+        outline: none !important;
+        box-shadow: none !important;
+        border-color: transparent !important;
+    }

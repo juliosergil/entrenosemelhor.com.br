@@ -1,0 +1,19 @@
+ .det_form {
+    background: url("../images/topo_bgmenu.png") repeat-x scroll left top transparent;
+    margin-top: 3px;
+    padding: 5px 0 0 5px;
+}
+
+.det_form span {
+    background: url("../images/det_form.gif") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    display: block;
+    font-size: 14px;
+    height: 33px;
+    padding-left: 15px;
+	margin-bottom: 0px;
+	width:93%;
+}
+.proposta{
+width: 199px;
+}

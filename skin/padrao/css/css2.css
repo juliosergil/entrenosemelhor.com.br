@@ -1,0 +1,37 @@
+.deal .image .inner{
+	width:125px;
+}
+ 
+.three_up_op .image .inner {
+    height: 83px;
+}
+.clearfix:after{
+	height: 0px;	
+}
+
+.three_up_op{
+	
+	width:97%;
+}
+.info{
+	height:94px;
+}
+.deal .info .subtitle{
+	height:11px;
+	margin-bottom:0px;
+	line-height:3.92em;
+}
+.view-deal-button{ 
+	float: right; width: 296px; margin-top: 15px;
+}
+.subtitle{
+	font-size: 12px; width: 163px; float: left;
+}
+.width{
+	width:324px;
+}
+.bannerportais{
+	margin-bottom:4px;
+	margin-left:12px;
+	display:none;
+}

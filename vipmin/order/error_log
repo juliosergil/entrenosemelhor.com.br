@@ -1,0 +1,44 @@
+[30-Dec-2010 19:19:15] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 22:15:16] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[11-Dec-2025 13:43:09 Brazil/East] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:1138
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(1138): in_array('order', NULL)
+#1 /home2/juli6348/entrenosemelhor.com.br/vipmin/order/index.php(5): need_auth('order')
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 1138
+[11-Dec-2025 13:44:23 Brazil/East] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:1138
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(1138): in_array('order', NULL)
+#1 /home2/juli6348/entrenosemelhor.com.br/vipmin/order/index.php(5): need_auth('order')
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 1138
+[11-Dec-2025 13:44:27 Brazil/East] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:1138
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(1138): in_array('order', NULL)
+#1 /home2/juli6348/entrenosemelhor.com.br/vipmin/order/index.php(5): need_auth('order')
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 1138
+[19-Dec-2025 11:05:34 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate column name 'destaque' in /home2/juli6348/entrenosemelhor.com.br/vipmin/order/edit.php:8
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/order/edit.php(8): mysqli_query(Object(mysqli), 'ALTER TABLE  `p...')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/vipmin/order/edit.php on line 8
+[19-Dec-2025 11:06:21 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'linkpagamento' in 'field list' in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php:114
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(114): mysqli_query(Object(mysqli), 'UPDATE  `planos...')
+#1 /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php(356): DB::Query('UPDATE  `planos...')
+#2 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(152): DB::Update('planos_publicac...', '1', Array)
+#3 /home2/juli6348/entrenosemelhor.com.br/include/library/Table.class.php(143): Table::UpdateCache('planos_publicac...', '1', Array)
+#4 /home2/juli6348/entrenosemelhor.com.br/vipmin/order/edit.php(40): Table->Update(Array)
+#5 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/library/DB.class.php on line 114
+[19-Dec-2025 11:06:57 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate column name 'qtdeanuncio' in /home2/juli6348/entrenosemelhor.com.br/vipmin/order/edit.php:9
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/order/edit.php(9): mysqli_query(Object(mysqli), 'ALTER TABLE  `p...')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/vipmin/order/edit.php on line 9
+[19-Dec-2025 11:07:10 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate column name 'linkpagamento' in /home2/juli6348/entrenosemelhor.com.br/vipmin/order/edit.php:9
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/order/edit.php(9): mysqli_query(Object(mysqli), 'ALTER TABLE  `p...')
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/vipmin/order/edit.php on line 9

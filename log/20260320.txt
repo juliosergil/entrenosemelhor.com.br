@@ -1,0 +1,8 @@
+20/03/2026 17:10:29 -  DIAS: 180
+20/03/2026 17:10:29 -  end_time: 1789589429
+20/03/2026 17:11:06 -  DIAS: 180
+20/03/2026 17:11:06 -  end_time: 1789589466
+20/03/2026 17:11:24 -  DIAS: 180
+20/03/2026 17:11:24 -  end_time: 1789589484
+20/03/2026 17:12:57 - grava_id_plano: update team set id_plano='2' where id=94
+20/03/2026 18:09:19 - grava_id_plano: update team set id_plano='2' where id=94

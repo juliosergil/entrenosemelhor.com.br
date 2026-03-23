@@ -1,0 +1,232 @@
+
+/* =========================
+   VIPMIN - MOBILE MENU (clean)
+   Prefixo: vmob-
+   ========================= */
+.vmob-root{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif}
+.vmob-reset,*[class^="vmob-"],*[class*=" vmob-"]{box-sizing:border-box}
+
+/* ---- Header ---- */
+.vmob-header{
+  position:sticky; top:0; z-index:1000;
+  background: radial-gradient(1200px 280px at 30% -30%, #0d4b9c 0%, #08162b 65%, #070e1c 100%);
+  color:#fff;
+  padding:12px 14px;
+  border-bottom:1px solid rgba(255,255,255,.06);
+  box-shadow:0 10px 30px rgba(10,22,45,.25);
+}
+.vmob-header__row{
+  position:relative;
+  display:flex; align-items:center; justify-content:flex-start; gap:10px;
+  padding-right:70px; /* espaço pro burger */
+}
+			
+.vmob-brand{ display:flex; align-items:center; gap:10px; min-width:0 }
+ 
+.vmob-brand img{ height:34px; width:auto; display:block }
+
+/* chip do usuário */
+ 
+.vmob-chip{
+  display:flex; align-items:center; gap:8px;
+  padding:6px 10px; border-radius:999px;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.15);
+  backdrop-filter:blur(6px);
+}
+.vmob-chip svg{ width:18px; height:18px; color:#dbeafe }
+.vmob-chip small{ opacity:.85; font-size:12px }
+ 	 
+/* ---- Burger dentro do header (mais alto) ---- */
+.vmob-burger{
+  position:absolute; right:12px; top:-9px; z-index:1001;
+  width:46px; height:46px; border-radius:14px; border:0;
+  background:#2563eb; color:#fff;
+  box-shadow:0 10px 24px rgba(37,99,235,.35), inset 0 1px rgba(255,255,255,.15);
+  display:inline-flex; align-items:center; justify-content:center;
+}
+.vmob-burger .vmob-burger__bar{
+  width:22px; height:2px; background:#fff; border-radius:2px;
+  position:relative; display:block;
+}
+.vmob-burger .vmob-burger__bar::before,
+.vmob-burger .vmob-burger__bar::after{
+  content:""; position:absolute; left:0; right:0; height:2px; background:#fff; border-radius:2px;
+}
+.vmob-burger .vmob-burger__bar::before{ top:-7px }
+.vmob-burger .vmob-burger__bar::after{ top:7px }
+
+/* ---- Drawer + Overlay ---- */
+.vmob-overlay{
+  position:fixed; inset:0; background:rgba(0,0,0,.45); display:none; z-index:1000;
+}
+.vmob-overlay.is-open{ display:block }
+
+.vmob-drawer{
+  position:fixed; inset:0 auto 0 0; width:86vw; max-width:420px;
+  background:linear-gradient(180deg,#0b122b,#0a0f22 45%,#070c18 100%);
+  border-right:1px solid rgba(255,255,255,.1);
+  transform:translateX(-102%); transition:transform .26s cubic-bezier(.2,.7,.2,1);
+  z-index:1002; color:#e5e7eb; overflow:auto; -webkit-overflow-scrolling:touch;
+  box-shadow: 20px 0 40px rgba(0,0,0,.35);
+}
+.vmob-drawer.is-open{ transform:translateX(0) }
+
+.vmob-drawer__head{
+  padding:18px 16px 12px; display:flex; align-items:center; gap:10px; border-bottom:1px solid rgba(255,255,255,.06);
+}
+.vmob-drawer__title{ font-weight:700; font-size:15px }
+
+/* ---- Menu list ---- */
+.vmob-menu{ list-style:none; margin:0; padding:10px 10px 24px }
+.vmob-item{
+  background:radial-gradient(240px 60px at 10% -30%, rgba(255,255,255,.06), rgba(255,255,255,.02));
+  border:1px solid rgba(255,255,255,.08); border-radius:14px;
+  margin:8px 0; overflow:hidden;
+}
+.vmob-link{
+  display:flex; align-items:center; gap:12px; padding:14px 12px; text-decoration:none; color:#eaf2ff;
+}
+.vmob-icon{ width:22px; height:22px; color:#93c5fd }
+.vmob-label{ font-weight:600 }
+
+/* seta do submenu */
+.vmob-caret{
+  margin-left:auto; width:18px; height:18px; color:#93c5fd;
+  transition: transform .22s ease;
+}
+.vmob-item.is-open .vmob-caret{ transform:rotate(90deg) }
+
+/* Submenu (accordion animado) */
+.vmob-sub{
+  height:0; overflow:hidden;
+  transition: height .26s cubic-bezier(.2,.7,.2,1);
+  background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+}
+.vmob-sub ul{ list-style:none; margin:0; padding:6px 10px 10px }
+.vmob-sub a{
+  display:flex; align-items:center; gap:10px; padding:10px 10px; border-radius:10px;
+  text-decoration:none; color:#e5e7eb;
+}
+.vmob-sub a:hover{ background:rgba(255,255,255,.06) }
+
+/* Atalhos rápidos (mantidos – opcionais) */
+.vmob-quick{
+  display:grid; grid-template-columns:1fr 1fr; gap:10px; padding:18px 12px 6px; background:#f7faff;
+}
+.vmob-quick .tile{
+  display:flex; align-items:center; gap:10px; padding:14px 12px; border-radius:14px;
+  background:#fff; border:1px solid #e9eef9; color:#1f2937; text-decoration:none;
+  box-shadow:0 6px 20px rgba(15,23,42,.06);
+}
+.vmob-quick .tile .qicon{ width:22px; height:22px; color:#2563eb }
+
+/* responsivo extra p/ aparelhos muito pequenos */
+@media (max-width:360px){
+  .vmob-chip{ display:none }
+													
+} 
+ 												
+ 
+/* === Uniformizar cores de todos os itens do menu (1º nível e submenu) === */
+.vmob-menu a,
+.vmob-link,
+.vmob-link .vmob-label,
+.vmob-sub a,
+.vmob-sub a:link,
+.vmob-sub a:visited {
+  color: #f8fbff !important;
+  opacity: 1 !important;
+}
+
+/* Hover consistente */
+.vmob-link:hover,
+.vmob-sub a:hover {
+  background: rgba(255,255,255,.06);
+  color: #ffffff !important;
+}
+
+/* Evita roxo de link visitado em alguns navegadores */
+.vmob-menu a:visited { color: inherit !important; }
+
+/* === Seta no início de cada item do submenu === */
+.vmob-sub li { position: relative; }
+.vmob-sub li a {
+  padding-left: 30px;             /* espaço para a seta */
+}
+
+/* Seta usando máscara SVG (herda a cor do texto) */
+.vmob-sub li a::before{
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  width: 12px; height: 12px;
+  transform: translateY(-50%);
+  background: currentColor;
+  -webkit-mask: url('data:image/svg+xml;utf8,\
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>') no-repeat center / contain;
+  mask: url('data:image/svg+xml;utf8,\
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>') no-repeat center / contain;
+  opacity: .9;
+  transition: transform .15s ease;
+}
+.vmob-sub li a:hover::before{
+  transform: translateY(-50%) translateX(2px);  /* micro animação no hover */
+}
+
+/* Fallback para navegadores sem suporte a mask() */
+@supports not ((mask: url()) or (-webkit-mask: url())) {
+  .vmob-sub li a::before{
+    content: "›";
+    background: none;
+    width: auto; height: auto;
+    left: 12px;
+    font-size: 16px; line-height: 1;
+    transform: translateY(-55%);
+  }
+}
+
+/* Base dos cards (caso queira reforçar) */
+.vip-quickgrid .tile,
+.vmob-quick .tile {
+  border-radius: 14px;
+  border: 1px solid transparent;
+  transition: background .2s ease, box-shadow .2s ease, transform .15s ease;
+}
+
+/* 1º card – azul suave */
+.vip-quickgrid .tile:nth-child(1),
+.vmob-quick .tile:nth-child(1) {
+  background: #E7F0FF;
+  color: #2563EB;
+}
+
+/* 2º card – verde suave */
+.vip-quickgrid .tile:nth-child(2),
+.vmob-quick .tile:nth-child(2) {
+  background: #E6FFF6;
+  color: #0F9D58;
+}
+
+/* 3º card – laranja suave */
+.vip-quickgrid .tile:nth-child(3),
+.vmob-quick .tile:nth-child(3) {
+  background: #FFF4E6;
+  color: #EA7A1F;
+}
+
+/* 4º card – roxo suave */
+.vip-quickgrid .tile:nth-child(4),
+.vmob-quick .tile:nth-child(4) {
+  background: #F3ECFF;
+  color: #7C3AED;
+}
+
+/* Efeito de hover (opcional) */
+.vip-quickgrid .tile:hover,
+.vmob-quick .tile:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+}
+

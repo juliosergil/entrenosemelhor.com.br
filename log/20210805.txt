@@ -1,0 +1,11 @@
+05/08/2021 07:53:12 - grava_id_plano: update team set id_plano='1' where id=57
+05/08/2021 08:06:46 - 58 - Os dias para o plano id 10 são 3 dia(s) 
+05/08/2021 08:06:46 - 58 - Periodo de veiculacao do anuncio atualizados com sucesso
+05/08/2021 08:06:46 - plano_id: 10 - atualiza_max_anuncios_partner
+05/08/2021 08:06:46 - plano_id: 10 - incrementa max_anuncios
+05/08/2021 08:06:46 - 58 - Erro ao atualizar o max_anuncio do usuario: update partner set max_anuncios = max_anuncios + 1 where id=. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+05/08/2021 08:13:10 - 59 - Os dias para o plano id 10 são 3 dia(s) 
+05/08/2021 08:13:10 - 59 - Periodo de veiculacao do anuncio atualizados com sucesso
+05/08/2021 08:13:10 - plano_id: 10 - atualiza_max_anuncios_partner
+05/08/2021 08:13:10 - plano_id: 10 - incrementa max_anuncios
+05/08/2021 08:13:10 - 59 - Erro ao atualizar o max_anuncio do usuario: update partner set max_anuncios = max_anuncios + 1 where id=. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1

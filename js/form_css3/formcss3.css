@@ -1,0 +1,35 @@
+ /* tutorial */
+
+input, textarea {
+	background: #fff none repeat scroll 0 0;
+	border: 1px solid #e5e5e5;
+	box-shadow: none;
+	font: 22px/100% "Open Sans",sans-serif;
+	outline: 0 none;
+	padding: 9px;
+	width: 547px;
+}
+
+textarea { 
+	width: 400px;
+	max-width: 400px;
+	height: 150px;
+	line-height: 150%;
+	}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus { 
+	border-color: #C9C9C9; 
+	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+	}
+ 
+.submit input {
+	width: auto;
+	padding: 9px 15px;
+	background: #617798;
+	border: 0;
+	font-size: 14px;
+	color: #FFFFFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	}

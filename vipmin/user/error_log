@@ -1,0 +1,44 @@
+[30-Dec-2010 19:19:19] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 21:40:03] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[11-Dec-2025 13:43:06 Brazil/East] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php:1138
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/function/common.php(1138): in_array('admin', NULL)
+#1 /home2/juli6348/entrenosemelhor.com.br/vipmin/user/index.php(5): need_auth('admin')
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/function/common.php on line 1138
+[11-Dec-2025 16:29:56 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.modelos_email' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_user_index.php:33
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_user_index.php(33): mysqli_query(Object(mysqli), 'select * from m...')
+#1 /home2/juli6348/entrenosemelhor.com.br/vipmin/user/index.php(72): include('/home2/juli6348...')
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_user_index.php on line 33
+[11-Dec-2025 16:32:56 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.modelos_email' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_user_index.php:33
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_user_index.php(33): mysqli_query(Object(mysqli), 'select * from m...')
+#1 /home2/juli6348/entrenosemelhor.com.br/vipmin/user/index.php(72): include('/home2/juli6348...')
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_user_index.php on line 33
+[11-Dec-2025 16:32:58 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.modelos_email' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_user_index.php:33
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_user_index.php(33): mysqli_query(Object(mysqli), 'select * from m...')
+#1 /home2/juli6348/entrenosemelhor.com.br/vipmin/user/index.php(72): include('/home2/juli6348...')
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_user_index.php on line 33
+[11-Dec-2025 16:32:58 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.modelos_email' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_user_index.php:33
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_user_index.php(33): mysqli_query(Object(mysqli), 'select * from m...')
+#1 /home2/juli6348/entrenosemelhor.com.br/vipmin/user/index.php(72): include('/home2/juli6348...')
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_user_index.php on line 33
+[19-Dec-2025 11:11:54 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.modelos_email' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_user_index.php:33
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_user_index.php(33): mysqli_query(Object(mysqli), 'select * from m...')
+#1 /home2/juli6348/entrenosemelhor.com.br/vipmin/user/index.php(72): include('/home2/juli6348...')
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_user_index.php on line 33
+[19-Dec-2025 11:11:59 Brazil/East] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'juli6348_guia.modelos_email' doesn't exist in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_user_index.php:33
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_user_index.php(33): mysqli_query(Object(mysqli), 'select * from m...')
+#1 /home2/juli6348/entrenosemelhor.com.br/vipmin/user/index.php(72): include('/home2/juli6348...')
+#2 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_user_index.php on line 33

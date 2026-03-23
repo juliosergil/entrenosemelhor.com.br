@@ -1,0 +1,135 @@
+[11-Dec-2025 13:43:18 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php:47
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/category/index.php(27): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php on line 47
+[11-Dec-2025 13:43:24 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php:47
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/category/index.php(27): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php on line 47
+[11-Dec-2025 16:29:59 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php:47
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/category/index.php(27): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php on line 47
+[11-Dec-2025 16:29:59 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php:47
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/category/index.php(27): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php on line 47
+[11-Dec-2025 16:32:55 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php:47
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/category/index.php(27): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php on line 47
+[11-Dec-2025 16:36:21 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php:47
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/category/index.php(27): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php on line 47
+[11-Dec-2025 16:36:21 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php:47
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/category/index.php(27): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php on line 47
+[11-Dec-2025 16:36:25 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_edit.php:59
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/category/edit.php(31): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_edit.php on line 59
+[11-Dec-2025 16:36:26 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_edit.php:59
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/category/edit.php(31): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_edit.php on line 59
+[11-Dec-2025 16:36:31 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php:47
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/category/index.php(27): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php on line 47
+[11-Dec-2025 16:39:00 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php:47
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/category/index.php(27): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php on line 47
+[11-Dec-2025 16:39:37 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php:47
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/category/index.php(27): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php on line 47
+[11-Dec-2025 16:39:43 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php:47
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/category/index.php(27): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php on line 47
+[11-Dec-2025 16:39:45 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php:47
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/category/index.php(27): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php on line 47
+[11-Dec-2025 16:41:05 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php:47
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/category/index.php(27): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php on line 47
+[11-Dec-2025 16:44:28 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php:47
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/category/index.php(27): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php on line 47
+[11-Dec-2025 16:46:30 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php:47
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/category/index.php(27): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php on line 47
+[11-Dec-2025 16:46:30 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php:47
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/category/index.php(27): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php on line 47
+[11-Dec-2025 16:46:34 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_edit.php:59
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/category/edit.php(31): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_edit.php on line 59
+[11-Dec-2025 16:46:37 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php:47
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/category/index.php(27): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php on line 47
+[11-Dec-2025 16:47:03 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php:47
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/category/index.php(27): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php on line 47
+[11-Dec-2025 16:47:05 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_edit.php:59
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/category/edit.php(31): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_edit.php on line 59
+[11-Dec-2025 16:52:12 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_edit.php:59
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/category/edit.php(31): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_edit.php on line 59
+[11-Dec-2025 16:52:13 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php:47
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/category/index.php(27): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php on line 47
+[11-Dec-2025 17:02:21 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php:47
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/category/index.php(27): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php on line 47
+[19-Dec-2025 10:57:19 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php:47
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/category/index.php(27): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php on line 47
+[19-Dec-2025 10:57:22 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "name" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php:47
+Stack trace:
+#0 /home2/juli6348/entrenosemelhor.com.br/vipmin/category/index.php(27): include()
+#1 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_category_index.php on line 47

@@ -1,0 +1,7 @@
+03/05/2020 00:14:09 - grava_id_plano: update team set id_plano='9' where id=42
+03/05/2020 00:14:10 - grava_id_plano: update team set id_plano='9' where id=42
+03/05/2020 00:14:59 - 43 - Os dias para o plano id 10 são 3 dia(s) 
+03/05/2020 00:14:59 - 43 - Periodo de veiculacao do anuncio atualizados com sucesso
+03/05/2020 00:14:59 - plano_id: 10 - atualiza_max_anuncios_partner
+03/05/2020 00:14:59 - plano_id: 10 - incrementa max_anuncios
+03/05/2020 00:14:59 - 43 - Erro ao atualizar o max_anuncio do usuario: update partner set max_anuncios = max_anuncios + 1 where id=. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1

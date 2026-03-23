@@ -1,0 +1,4 @@
+incluir no cpanel a tarefa cron
+
+comando  curl -s http://www.obaobanegocios.com.br/cron/init.php
+1x por dia

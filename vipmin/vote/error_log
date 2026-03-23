@@ -1,0 +1,2 @@
+[30-Dec-2010 19:19:23] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0
+[30-Dec-2010 20:08:45] PHP Warning:  PHP Startup: Invalid library (maybe not a PHP library) 'libssh2.so'  in Unknown on line 0

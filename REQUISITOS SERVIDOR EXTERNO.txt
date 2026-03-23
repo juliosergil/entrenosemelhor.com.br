@@ -1,0 +1,29 @@
+
+=======================================
+ ----   REQUISITOS DO SERVIDOR  ------
+=======================================
+
+VERSÃO DO PHP: 5.6
+MYSQL 2.0 OU SUPERIOR ATIVADO
+SISTEMA OPERACIONAL DO SERVIDOR: LINUX
+APACHE 2.0 OU SUPERIOR
+IONCUBE LOADER INSTALADO NO SERVIDOR
+
+
+=======================================
+--- BIBLIOTECAS DO PHP ---
+=======================================
+
+DISPLAY_ERROS = ON
+ALLOW_URL_FOPEN = ON
+SHORT_OPEN_TAG = OK
+
+=======================================
+--- EXTENSÕES DO PHP ---
+=======================================
+MYSQL
+GD
+JSON
+CURL
+SESSION
+MOD_REWRITE

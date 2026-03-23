@@ -1,0 +1,8 @@
+[09-Mar-2026 14:26:28 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "preference_id" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_pagamento_mercadopago.php:35
+Stack trace:
+#0 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_pagamento_mercadopago.php on line 35
+[09-Mar-2026 16:05:35 Brazil/East] PHP Fatal error:  Uncaught Error: Undefined constant "preference_id" in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_pagamento_mercadopago.php:35
+Stack trace:
+#0 {main}
+  thrown in /home2/juli6348/entrenosemelhor.com.br/include/compiled/manage_team_pagamento_mercadopago.php on line 35
