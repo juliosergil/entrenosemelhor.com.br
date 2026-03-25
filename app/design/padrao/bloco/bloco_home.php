@@ -87,8 +87,64 @@ $rsF = mysqli_query(DB::$mConnection,$sqlF);
 				</div>
 			</div>
 		</div>
-	 </div>
-	 <div class="home-image-top-right"></div>
+		 </div>
+		 <div class="home-image-top-right"></div>
+
+		 <!-- ===== CARDS PRINCIPAIS ===== -->
+		 <div class="container mt-5 mb-5">
+			<div class="row">
+				<div class="col-12">
+					<div class="featured-cards-section">
+						<div class="featured-cards-grid">
+							<!-- Card 1: Imóveis -->
+							<a href="<?php echo $ROOTPATH; ?>?state=<?php echo $state; ?>&page=search&idcat=1" class="featured-card">
+								<div class="featured-card-icon">
+									<i class="fas fa-home"></i>
+								</div>
+								<h3>Imóveis</h3>
+								<p>Casas, apartamentos e terrenos</p>
+							</a>
+
+							<!-- Card 2: Carros -->
+							<a href="<?php echo $ROOTPATH; ?>?state=<?php echo $state; ?>&page=search&idcat=2" class="featured-card">
+								<div class="featured-card-icon">
+									<i class="fas fa-car"></i>
+								</div>
+								<h3>Carros</h3>
+								<p>Veículos novos e usados</p>
+							</a>
+
+							<!-- Card 3: Serviços -->
+							<a href="<?php echo $ROOTPATH; ?>?state=<?php echo $state; ?>&page=search&idcat=3" class="featured-card">
+								<div class="featured-card-icon">
+									<i class="fas fa-tools"></i>
+								</div>
+								<h3>Serviços</h3>
+								<p>Profissionais e empresas</p>
+							</a>
+
+							<!-- Card 4: Empregos -->
+							<a href="<?php echo $ROOTPATH; ?>?state=<?php echo $state; ?>&page=search&idcat=4" class="featured-card">
+								<div class="featured-card-icon">
+									<i class="fas fa-briefcase"></i>
+								</div>
+								<h3>Empregos</h3>
+								<p>Oportunidades de trabalho</p>
+							</a>
+
+							<!-- Card 5: Outros -->
+							<a href="<?php echo $ROOTPATH; ?>?state=<?php echo $state; ?>&page=search" class="featured-card">
+								<div class="featured-card-icon">
+									<i class="fas fa-th"></i>
+								</div>
+								<h3>Mais</h3>
+								<p>Todas as categorias</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		 </div>
 <!--div class="content-subtitle">
 	<?php
 		echo utf8_decode($INI['system']['sitetitle']);
