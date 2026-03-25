@@ -146,3 +146,108 @@
 .featured-card p {
     color: #b0b0b0 !important;
 }
+
+
+/* ===== FEATURED CARDS - SMALLER SIZE ===== */
+.featured-card {
+    padding: 20px 15px !important;
+    min-height: 160px !important;
+}
+
+.featured-card-icon {
+    font-size: 36px !important;
+}
+
+.featured-card h3 {
+    font-size: 14px !important;
+}
+
+.featured-card p {
+    font-size: 11px !important;
+}
+
+/* ===== CATEGORY STRIPE - STANDARDIZE ===== */
+.category-stripe {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+    align-items: center !important;
+}
+
+.category-stripe li {
+    margin: 0 !important;
+}
+
+.category-stripe a {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+}
+
+.category-stripe .icon-background {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 10px !important;
+    margin-bottom: 8px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.category-stripe a:hover .icon-background {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3) !important;
+}
+
+.category-stripe img {
+    width: 50px !important;
+    height: 50px !important;
+    object-fit: contain !important;
+}
+
+.category-stripe small {
+    font-size: 11px !important;
+    color: #333333 !important;
+    text-align: center !important;
+    font-weight: 500 !important;
+    max-width: 70px !important;
+    line-height: 1.2 !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .featured-card {
+        padding: 15px 10px !important;
+        min-height: 140px !important;
+    }
+    
+    .featured-card-icon {
+        font-size: 28px !important;
+    }
+    
+    .featured-card h3 {
+        font-size: 12px !important;
+    }
+    
+    .featured-card p {
+        font-size: 9px !important;
+    }
+    
+    .category-stripe .icon-background {
+        width: 60px !important;
+        height: 60px !important;
+    }
+    
+    .category-stripe img {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    
+    .category-stripe small {
+        font-size: 10px !important;
+    }
+}
