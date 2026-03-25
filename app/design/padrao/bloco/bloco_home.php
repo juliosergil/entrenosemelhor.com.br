@@ -97,7 +97,7 @@ $rsF = mysqli_query(DB::$mConnection,$sqlF);
 					<div class="featured-cards-section">
 						<div class="featured-cards-grid">
 							<!-- Card 1: Imóveis -->
-							<a href="<?php echo $ROOTPATH; ?>?state=<?php echo $state; ?>&page=search&idcat=1" class="featured-card">
+							<a href="<?php echo $ROOTPATH; ?>?state=<?php echo $state; ?>&page=search&idcat=1" class="featured-card featured-card-1">
 								<div class="featured-card-icon">
 									<i class="fas fa-home"></i>
 								</div>
@@ -106,7 +106,7 @@ $rsF = mysqli_query(DB::$mConnection,$sqlF);
 							</a>
 
 							<!-- Card 2: Carros -->
-							<a href="<?php echo $ROOTPATH; ?>?state=<?php echo $state; ?>&page=search&idcat=2" class="featured-card">
+							<a href="<?php echo $ROOTPATH; ?>?state=<?php echo $state; ?>&page=search&idcat=2" class="featured-card featured-card-2">
 								<div class="featured-card-icon">
 									<i class="fas fa-car"></i>
 								</div>
@@ -115,7 +115,7 @@ $rsF = mysqli_query(DB::$mConnection,$sqlF);
 							</a>
 
 							<!-- Card 3: Serviços -->
-							<a href="<?php echo $ROOTPATH; ?>?state=<?php echo $state; ?>&page=search&idcat=3" class="featured-card">
+							<a href="<?php echo $ROOTPATH; ?>?state=<?php echo $state; ?>&page=search&idcat=3" class="featured-card featured-card-3">
 								<div class="featured-card-icon">
 									<i class="fas fa-tools"></i>
 								</div>
@@ -123,22 +123,22 @@ $rsF = mysqli_query(DB::$mConnection,$sqlF);
 								<p>Profissionais e empresas</p>
 							</a>
 
-							<!-- Card 4: Empregos -->
-							<a href="<?php echo $ROOTPATH; ?>?state=<?php echo $state; ?>&page=search&idcat=4" class="featured-card">
+							<!-- Card 4: Uber -->
+							<a href="<?php echo $ROOTPATH; ?>?state=<?php echo $state; ?>&page=search&idcat=5" class="featured-card featured-card-4">
 								<div class="featured-card-icon">
-									<i class="fas fa-briefcase"></i>
+									<i class="fas fa-taxi"></i>
 								</div>
-								<h3>Empregos</h3>
-								<p>Oportunidades de trabalho</p>
+								<h3>Uber</h3>
+								<p>Cadastro de motoristas</p>
 							</a>
 
-							<!-- Card 5: Outros -->
-							<a href="<?php echo $ROOTPATH; ?>?state=<?php echo $state; ?>&page=search" class="featured-card">
+							<!-- Card 5: Airbnb -->
+							<a href="<?php echo $ROOTPATH; ?>?state=<?php echo $state; ?>&page=search&idcat=6" class="featured-card featured-card-5">
 								<div class="featured-card-icon">
-									<i class="fas fa-th"></i>
+									<i class="fas fa-bed"></i>
 								</div>
-								<h3>Mais</h3>
-								<p>Todas as categorias</p>
+								<h3>Airbnb</h3>
+								<p>Hospedagem e aluguel</p>
 							</a>
 						</div>
 					</div>

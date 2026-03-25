@@ -112,3 +112,37 @@
         font-size: 9px;
     }
 }
+
+/* ===== FEATURED CARDS - DARK VIBRANT COLORS ===== */
+.featured-card {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%) !important;
+    border-top: 4px solid #ffc107 !important;
+}
+
+.featured-card-1 { border-top-color: #e74c3c !important; }
+.featured-card-1 .featured-card-icon { color: #e74c3c !important; }
+.featured-card-1:hover .featured-card-icon { color: #ff6b6b !important; }
+
+.featured-card-2 { border-top-color: #3498db !important; }
+.featured-card-2 .featured-card-icon { color: #3498db !important; }
+.featured-card-2:hover .featured-card-icon { color: #5dade2 !important; }
+
+.featured-card-3 { border-top-color: #2ecc71 !important; }
+.featured-card-3 .featured-card-icon { color: #2ecc71 !important; }
+.featured-card-3:hover .featured-card-icon { color: #58d68d !important; }
+
+.featured-card-4 { border-top-color: #f39c12 !important; }
+.featured-card-4 .featured-card-icon { color: #f39c12 !important; }
+.featured-card-4:hover .featured-card-icon { color: #f8b739 !important; }
+
+.featured-card-5 { border-top-color: #9b59b6 !important; }
+.featured-card-5 .featured-card-icon { color: #9b59b6 !important; }
+.featured-card-5:hover .featured-card-icon { color: #c39bd3 !important; }
+
+.featured-card h3 {
+    color: #ffffff !important;
+}
+
+.featured-card p {
+    color: #b0b0b0 !important;
+}
